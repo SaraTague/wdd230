@@ -14,25 +14,28 @@ footer {
 header,
 footer {
   border-radius: 20px 20px 20px 20px;
-  font-family: "Montserrat";
-  background-color: #3D3D3D;
+  background-color: #3d3d3d;
   color: white;
   text-align: center;
   padding: 1.5rem;
 }
 
 header {
-  padding: 1.5rem;
-  line-height: 1.6em;
-  grid-column: 3 / 5;
-  grid-row: 1 / 2;
-}
-
-.intro-banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.intro-banner-heading {
+  justify-items: center;
 }
 
 .family-pic {
-    border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  grid-column: 1 / 2;
+}
+
+.body-of-index {
+  font-family: "Montserrat";
 }
