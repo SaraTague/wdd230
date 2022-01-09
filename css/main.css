@@ -13,7 +13,9 @@ footer {
 
 header,
 footer {
-  background-color: darkgreen;
+  border-radius: 20px 20px 20px 20px;
+  font-family: "Montserrat";
+  background-color: #3D3D3D;
   color: white;
   text-align: center;
   padding: 1.5rem;
@@ -21,4 +23,16 @@ footer {
 
 header {
   padding: 1.5rem;
+  line-height: 1.6em;
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+}
+
+.intro-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.family-pic {
+    border-radius: 20px 20px 20px 20px;
 }
