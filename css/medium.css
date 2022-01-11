@@ -1,0 +1,13 @@
+@media only screen and (min-width: 32.5em) {
+    header,
+    footer {
+      background-color: #3d3d3d;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .family-pic {
+        border-radius: 10px 10px 10px 10px;
+        grid-column: 1 / 2;
+      }
+}
