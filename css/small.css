@@ -1,6 +1,8 @@
+@charset "UTF-8";
 body {
   font-size: 18px;
   line-height: 1.5;
+  font-family: "Didact Gothic", "Montserrat", sans-serif;
 }
 
 header,
@@ -13,7 +15,7 @@ footer {
 
 header,
 footer {
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 0px;
   background-color: #3d3d3d;
   color: white;
   text-align: center;
@@ -27,15 +29,21 @@ header {
   align-items: center;
 }
 
-.intro-banner-heading {
-  justify-items: center;
+h1 {
+  font-size: 2em;
+  grid-column: 1 / 3;
+  overflow: hidden;
 }
 
+h2 {
+  font-size: 1.2em;
+  text-align: center;
+}
 .family-pic {
-  border-radius: 20px 20px 20px 20px;
-  grid-column: 1 / 2;
+  border-radius: 10px;
+  grid-column: 1 / 3;
 }
 
-.body-of-index {
-  font-family: 'Didact Gothic', 'Montserrat', sans-serif; 
+nav ul {
+  list-style-type: none;
 }

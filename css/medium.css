@@ -1,13 +1,29 @@
 @media only screen and (min-width: 32.5em) {
-    header,
-    footer {
-      background-color: #3d3d3d;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-    }
-    .family-pic {
-        border-radius: 10px 10px 10px 10px;
-        grid-column: 1 / 2;
-      }
+  h1 {
+    font-size: 2.5em;
+    grid-column: 2/ 3;
+  }
+  h2 {
+    font-size: 1.8em;
+    text-align: left;
+  }
+  header {
+    grid-template-rows: 1fr;
+  }
+  header,
+  footer {
+    border-radius: 20px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .family-pic {
+    border-radius: 20px;
+    grid-column: 1 / 2;
+  }
+  nav ul {
+    list-style-type: disc;
+  }
 }
