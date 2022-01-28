@@ -50,7 +50,7 @@ footer {
 }
 
 h1 {
-display: none;
+  display: none;
 }
 
 h2 {
@@ -86,7 +86,7 @@ td {
   color: white;
   color: white;
   text-decoration: none;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 nav a:hover {
