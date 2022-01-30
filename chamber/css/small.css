@@ -37,9 +37,9 @@ header {
   background-color: var(--primary-color);
 
   padding: 30px 0;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
 }
 main {
   display: grid;
@@ -83,21 +83,21 @@ body {
 
 #logo img {
   width: 10rem;
-	grid-column: 1 / 2;
-	grid-row: 1 / 2;
-	justify-self: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  justify-self: center;
   padding: 1rem;
 }
 
 .icons {
   width: 2.25rem;
-  padding: .5rem;
+  padding: 0.5rem;
 
   padding-right: 30px;
-	grid-column: 4 / 6;
-	grid-row: 1 / 2;
-	justify-self: end;
-	display: flex;
+  grid-column: 4 / 6;
+  grid-row: 1 / 2;
+  justify-self: end;
+  display: flex;
 }
 
 .footer-logo {
@@ -108,17 +108,10 @@ hr {
   color: white;
 }
 
-
-
-
-
-
-
-
 nav {
   grid-column: 3 / 6;
-	grid-row: 1 / 2;
-  
+  grid-row: 1 / 2;
+
   margin: 0 auto;
   max-width: 760px;
   background-color: var(--primary-color);
@@ -157,24 +150,6 @@ nav {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .callToAction {
   grid-area: 1 / 1 / 2 / 2;
 }
@@ -183,7 +158,7 @@ nav {
 }
 .spotLights {
   grid-area: 5 / 1 / 6 / 2;
-  background-color:#616162;
+  background-color: #616162;
   padding: 0.7rem 2vw;
 }
 .spotLight1 {
