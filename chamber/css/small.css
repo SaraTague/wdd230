@@ -34,20 +34,25 @@ footer {
 }
 
 header {
-  display: grid;
-  align-items: center;
   background-color: var(--primary-color);
-  grid-template-rows: 1fr 1fr 1fr;
+
+  padding: 30px 0;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-items: center;
 }
 main {
-  padding: 0px 10px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  height: calc(100vh - 80px);
+  row-gap: 5px;
+  padding: 1rem;
 }
+
+main div {
+  background-color: #43c0cc;
+  display: block;
+  padding: 3.5rem 2vw;
+}
+
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -77,26 +82,22 @@ body {
 }
 
 #logo img {
-  width: 100px;
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-  padding: 0.5rem;
+  width: 10rem;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	justify-self: center;
+  padding: 1rem;
 }
 
-.site-image,
-.logo-in-page {
-  width: 230px;
-}
-
-.local {
-  width: 365px;
-}
 .icons {
-  width: 25px;
-  display: flex;
-  align-items: center;
-  padding: 0.25rem;
+  width: 2.25rem;
+  padding: .5rem;
+
+  padding-right: 30px;
+	grid-column: 4 / 6;
+	grid-row: 1 / 2;
+	justify-self: end;
+	display: flex;
 }
 
 .footer-logo {
@@ -107,7 +108,17 @@ hr {
   color: white;
 }
 
+
+
+
+
+
+
+
 nav {
+  grid-column: 3 / 6;
+	grid-row: 1 / 2;
+  
   margin: 0 auto;
   max-width: 760px;
   background-color: var(--primary-color);
@@ -145,41 +156,65 @@ nav {
 .responsive li {
   display: block;
 }
-.event {
-  grid-area: 1 / 1 / 3 / 2;
-  background-color: var(--accent1-color);
-}
-.weather {
-  grid-area: 3 / 1 / 5 / 2;
-  background-color: var(--accent1-color);
-}
-.join {
-  grid-area: 5 / 1 / 7 / 2;
-  background-color: var(--accent1-color);
-}
-.hero {
-  grid-area: 1 / 2 / 5 / 4;
-  background-color: var(--accent1-color);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.callToAction {
+  grid-area: 1 / 1 / 2 / 2;
 }
 .news {
-  grid-area: 5 / 2 / 7 / 4;
-  background-color: var(--accent1-color);
+  grid-area: 4 / 1 / 5 / 2;
 }
-.spot1 {
-  grid-area: 1 / 4 / 3 / 5;
-  background-color: var(--accent1-color);
+.spotLights {
+  grid-area: 5 / 1 / 6 / 2;
+  background-color:#616162;
+  padding: 0.7rem 2vw;
 }
-.spot2 {
-  grid-area: 3 / 4 / 5 / 5;
-  background-color: var(--accent1-color);
+.spotLight1 {
+  margin: 0 auto;
 }
-.spot3 {
-  grid-area: 5 / 4 / 7 / 5;
-  background-color: var(--accent1-color);
+.spotLight2 {
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.spotLight3 {
+  display: none;
+}
+.event {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.weather {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.join {
+  display: none;
 }
 
 .map {
   list-style: none;
   text-decoration: none;
   color: white;
+}
+
+date {
+  color: #68e1ec;
+  margin: 0.5rem;
+  padding: 0.75rem;
 }

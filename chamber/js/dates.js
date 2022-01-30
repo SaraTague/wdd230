@@ -1,10 +1,18 @@
 const themod = document.querySelector("#lastmod");
 lastmod.textContent = `Page last updated: ${document.lastModified}`;
 
-year.innerHTML = new Date().getFullYear();
 
-let today = new Date();
-document.getElementById('displayDateTime').innerHTML=today;
+const datefield = document.querySelector("date");
+const datefieldUK = document.querySelector("aside"); 
 
-document.getElementById("modify").innerHTML = document.lastModified
-document.getElementById("year").innerHTML = new Date().getFullYear()
+
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+	now
+);
+const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+	dateStyle: "full"
+}).format(now);
+
+
+datefield.innerHTML = `<em>${fulldate}</em>`;
