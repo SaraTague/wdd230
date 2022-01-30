@@ -7,10 +7,7 @@
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
     <title>Allen Chamber of Commerce</title>
-    <meta
-      name="description"
-      content="Allen Chamber of Commerce Site"
-    />
+    <meta name="description" content="Allen Chamber of Commerce Site" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -27,22 +24,61 @@
       <div id="logo">
         <img src="images/allen-logo-white.png" alt="Allen Logo" />
       </div>
-      <nav class="top-nav">
-        <ul>
-          <li><a href="css/">Discover</a></li>
-          <li><a href="">Directory</a></li>
-          <li><a href="../lesson3/typography.html">Join</a></li>
-          <li><a href="../lesson3/color-scheme.html">Contact</a></li>
+      <div>
+        <a href="https://facebook.com"
+          ><img class="icons" src="images/facebook-icon.png" target="_blank"
+        /></a>
+        <a href="https://www.linkedin.com"
+          ><img class="icons" src="images/linkenin-icon.png" target="_blank"
+        /></a>
+      </div>
+      <nav>
+        <ul class="navigation responsive">
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
+        <span id="displayDateTime"></span>
       </nav>
+      <script id="rendered-js">
+        _;
+      </script>
     </header>
     <main>
-
+      <div class="event">Event</div>
+      <div class="weather">Weather</div>
+      <div class="join">Join</div>
+      <div class="hero">Hero With Site image and call to action</div>
+      <div class="news">News Release</div>
+      <div class="spot1">Spotlight1</div>
+      <div class="spot2">Spotlight2</div>
+      <div class="spot3">Spotlight3</div>
     </main>
 
     <footer>
-      &copy; <span id="year">year</span> | <strong>Sara M. Tague</strong> | Texas | WDD 230
+      <img
+        src="images/allen-logo-white.png"
+        alt="Allen Logo"
+        class="footer-logo"
+      />
+      <h1>Allen Chamber of Commerce</h1>
+      <p>301 Century Pkwy, Allen, TX 75013<br /></p>
+      <p>allencommerce@gmail.com</p>
+      <p>+(469) 2589-2693</p>
+      <div>
+        <a
+          href="https://www.google.com/maps/place/Allen,+TX/@33.1141831,-96.7077114,13z/data=!3m1!4b1!4m5!3m4!1s0x864c172e4d9479bd:0xcae82aa992de2cd5!8m2!3d33.1031744!4d-96.6705503"
+          ><p class="map">&#128204;Map of Allen</p></a
+        >
+      </div>
+
+      <hr />
+      &copy; <span id="year">year</span> | <strong>Sara M. Tague</strong> |
+      Texas | WDD 230
       <p id="lastmod"></p>
     </footer>
   </body>
+  <script src="js/navigation.js" defer></script>
 </html>
