@@ -34,16 +34,24 @@ footer {
 }
 
 main {
+
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-columns: 1fr;
+  margin-bottom: .5rem;
   font-size: 1.25rem;
   display: grid;
   row-gap: 0.5rem;
   padding: 0.5rem;
+
 }
 
-main div {
-  background-color: #43c0cc;
+ main div {
+  background-color: rgb(212, 209, 209);
   display: block;
   padding: 1rem;
+  text-align: center;
+  height:fit-content;
 }
 
 h1 {
@@ -63,8 +71,13 @@ h5 {
 
 /* home content */
 
+button:hover {
+  cursor: pointer;
+}
+
 strong {
   font-size: 1.75rem;
+  color: #1c60aa;
 }
 
 .callToAction {
@@ -84,10 +97,10 @@ strong {
   grid-column: 1/3;
   grid-row: 1/2;
   padding: 1.5rem;
-  color:white;
-  background-color:#00000086;
+  color: white;
+  background-color: #00000086;
   margin: 0;
-  width:auto;
+  width: auto;
   height: fit-content;
   font-size: 1.9rem;
 }
@@ -100,21 +113,27 @@ strong {
   border-radius: 10px;
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
-  font-size: .9em;
+  font-size: 0.9em;
   color: #ffffff;
-  background-color:#1c60aa;
+  background-color: #114277;
+  
 }
-
-
 
 .news {
-  grid-area: 4 / 1 / 5 / 2;
+  grid-area: 4 / 1 / 5 / 1;
 }
 .spotLights {
+  text-align: center;
   grid-area: 5 / 1 / 6 / 2;
   background-color: #000000;
   padding: 0.5rem;
 }
+
+.spotLights img {
+  width: 50px;
+  height: 50px;
+}
+
 .spotLight1 {
   margin: 0 auto;
 }
