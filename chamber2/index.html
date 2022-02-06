@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
+    <meta name="author" content="Sara Matheney Tague" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allen Chamber of Commerce</title>
-    <meta name="description" content="Allen Chamber of Commerce Site" />
+    <meta
+      name="description"
+      content="Home page for the Allen Texas Chamber of Commerce Site"
+    />
     <link rel="shortcut icon" href="../favicon.ico" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
@@ -19,15 +20,20 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script defer src="js/dates.js"></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
+    <div id="banner">
+      <p>
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </p>
+    </div>
     <header>
       <h1>Allen Chamber of Commerce</h1>
       <div id="logo">
         <img src="images/allen-logo-white.png" alt="Allen Logo" />
       </div>
-      <div>
+      <div class="social-media">
         <a href="https://facebook.com"
           ><img class="icons" src="images/facebook-icon.png" target="_blank"
         /></a>
@@ -37,31 +43,50 @@
       </div>
 
       <nav>
-        <ul class="navigation responsive">
-          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <ul class="navigation">
+          <li><a class="ham" href="#">&#9776; Menu</a></li>
           <li><a href="#">Discover</a></li>
           <li><a href="#">Directory</a></li>
           <li><a href="#">Join</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <span id="displayDateTime"></span>
       </nav>
 
-      <time></time>
-
-      <script id="rendered-js"></script>
+      <div class="today"><date></date></div>
     </header>
     <main>
-      <div class="callToAction">Hero with site name and call to action</div>
-      <div class="event">Event</div>
-      <div class="weather">Weather</div>
-      <div class="news">News Release</div>
+
+      <section class="callToAction">
+        <h2> Welcom to Allen Texas! </h2>
+        <img
+          src="images/bluebonnets.jpg"
+          alt="Texas state flower the bluebonnet"
+        />
+        <button type="button" class="join-button"> Click here to join the chamber</button>
+    </section>
+
+
+      <div class="event">
+        Grand Opening<br />
+        <strong>Cukcake shop</strong> 🧁<br />
+        Join us for the grand opening of the new cupcake shop, Friday at 11:00
+        a.m.
+      </div>
+
+      <div class="weather"><strong>Weather</strong></div>
+
+      <div class="news"><strong>Allen News</strong></div>
+
       <div class="spotLights">
         <div class="spotLight1">SpotLight 1</div>
+
         <div class="spotLight2">SpotLight 2</div>
+
         <div class="spotLight3">SpotLight 3</div>
+
       </div>
-      <div class="join">Join</div>
+      <div class="join"><strong>Join Us!</strong></div>
+      
     </main>
 
     <footer>
@@ -87,5 +112,4 @@
       <p id="lastmod"></p>
     </footer>
   </body>
-  <script src="js/navigation.js" defer></script>
 </html>
