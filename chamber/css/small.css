@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* color */
 
 :root {
@@ -34,24 +33,18 @@ footer {
 }
 
 main {
-
   display: grid;
   grid-auto-rows: minmax(min-content, max-content);
   grid-template-columns: 1fr;
-  margin-bottom: .5rem;
-  font-size: 1.25rem;
-  display: grid;
+  margin-bottom: 0.5rem;
   row-gap: 0.5rem;
   padding: 0.5rem;
-
 }
 
- main div {
+main div {
   background-color: rgb(212, 209, 209);
-  display: block;
   padding: 1rem;
   text-align: center;
-  height:fit-content;
 }
 
 h1 {
@@ -116,7 +109,6 @@ strong {
   font-size: 0.9em;
   color: #ffffff;
   background-color: #114277;
-  
 }
 
 .news {
@@ -160,7 +152,7 @@ strong {
 
 header {
   background-color: var(--primary-color);
-  padding: 1;
+  padding: 0rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -200,7 +192,7 @@ nav {
 }
 .navigation {
   list-style: none;
-  padding: 0;
+  padding: 0rem;
 }
 .navigation li:first-child {
   display: block;
@@ -261,7 +253,7 @@ hr {
   background-color: #8de0e7;
   border: black;
   color: #000;
-  padding: 0.2rem;
+  padding: 1rem;
   text-align: center;
   font-size: 1.1rem;
 }
