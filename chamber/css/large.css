@@ -51,7 +51,11 @@
       align-items: center;
       text-align: center;
     }
-  
+
+    .spotLights strong {
+      font-size: 1.2em;
+    }
+    
     .spotLight3 {
       display: grid;
       margin: 0.5rem;
@@ -62,7 +66,13 @@
     .join {
       grid-area: 3 / 1 / 4 / 2;
     }
+    .join button {
+      padding: 15px;
+      width: 75%;
+    }
+
     .news {
+      
       grid-area: 3 / 2 / 4 / 3;
     }
     .event {

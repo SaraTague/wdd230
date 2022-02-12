@@ -45,6 +45,7 @@ main div {
   background-color: rgb(212, 209, 209);
   padding: 1rem;
   text-align: center;
+  
 }
 
 h1 {
@@ -78,12 +79,14 @@ strong {
   grid: 1fr 1fr / 1fr 1fr;
 }
 
-.callToAction img {
+.callToAction picture {
   grid-column: 1/3;
-  grid-row: 1/3;
+  grid-row: 1/6;
   z-index: -1;
+}
+
+.callToAction picture img {
   width: 100%;
-  height: 100%;
 }
 
 .callToAction h2 {
@@ -115,6 +118,7 @@ strong {
   grid-area: 4 / 1 / 5 / 1;
 }
 .spotLights {
+  
   text-align: center;
   grid-area: 5 / 1 / 6 / 2;
   background-color: #000000;
@@ -124,6 +128,8 @@ strong {
 .spotLights img {
   width: 50px;
   height: 50px;
+  padding: 0;
+
 }
 
 .spotLight1 {
@@ -144,6 +150,12 @@ strong {
 .weather {
   grid-area: 3 / 1 / 4 / 2;
 }
+
+.weatherimg {
+  width: 4em;
+}
+
+
 .join {
   display: none;
 }
@@ -164,7 +176,6 @@ header {
   color: white;
   font-size: 1.25rem;
   margin: 0.5rem;
-  padding: 10px;
   text-align: center;
   grid-column: 1 / 3;
 }
@@ -183,6 +194,7 @@ header {
 }
 
 .icons {
+  padding: .4em;
   width: 2.25rem;
 }
 
@@ -257,3 +269,4 @@ hr {
   text-align: center;
   font-size: 1.1rem;
 }
+

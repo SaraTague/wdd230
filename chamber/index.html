@@ -29,15 +29,26 @@
     <header>
       <h1>Allen Chamber of Commerce</h1>
       <div id="logo">
-        <img src="images/allen-logo-white.png" alt="Allen Logo" />
+        <picture
+          ><img src="images/allen-logo-white.png" alt="Allen Logo"
+        /></picture>
       </div>
       <div class="social-media">
         <a href="https://facebook.com"
-          ><img class="icons" src="images/facebook-icon.png"
-        /></a>
+          ><picture
+            ><img
+              class="icons"
+              src="images/facebook-icon.png"
+              alt="Facebook Logo" /></picture
+        ></a>
+
         <a href="https://www.linkedin.com"
-          ><img class="icons" src="images/linkenin-icon.png"
-        /></a>
+          ><picture
+            ><img
+              class="icons"
+              src="images/linkenin-icon.png"
+              alt="Linkedin logo" /></picture
+        ></a>
       </div>
 
       <nav>
@@ -50,15 +61,28 @@
         </ul>
       </nav>
 
-      <div class="today"><date></date></div>
+      <div class="today"></div>
     </header>
     <main>
       <section class="callToAction">
         <h2>Welcom to Allen Texas!</h2>
-        <img
-          src="images/bluebonnets.jpg"
-          alt="Texas state flower the bluebonnet"
-        />
+
+        <picture>
+          <source
+            media="(min-width: 1100px)"
+            srcset="images/wdd230-org-large.webp"
+          />
+          <source
+            media="(min-width: 32.5em)"
+            srcset="images/wdd230-org-medium.webp"
+          />
+          <source
+            media="(max-width: 599px)"
+            srcset="images/wdd230-org-small.webp"
+          />
+          <img src="images/wdd230-org-large.webp" alt="" />
+        </picture>
+
         <button type="button" class="join-button">
           Click here to join the chamber
         </button>
@@ -71,7 +95,21 @@
         a.m.
       </div>
 
-      <div class="weather"><strong>Weather</strong></div>
+      <div class="weather">
+        <strong>Weather</strong>
+
+        <p>Currently: <span id="temp">23</span>&#176;F</p>
+
+        <picture
+          ><img
+            class="weatherimg"
+            src="images/partly-cloudy.png"
+            alt="Sun with clouds covering it"
+        /></picture>
+
+        <p>Wind Speed: <span id="speed">30</span> mph</p>
+        <p>Wind Chill: <span id="wind"></span></p>
+      </div>
 
       <div class="news">
         <strong>Allen News</strong><br />Work on improvements to Allen Heritage
@@ -81,14 +119,17 @@
       <div class="spotLights">
         <div class="spotLight1">
           <strong>Local Moving Company</strong><br />
-          <img src="images/truck.png" alt="Moving truck" />
+          <picture><img src="images/truck.png" alt="Moving truck" /></picture>
+
           <br />
           To learn more please contact 469-218-5339
         </div>
 
         <div class="spotLight2">
           <strong>Weekly Farmers Market</strong><br />
-          <img src="images/market-farm.png" alt="Market booth" />
+          <picture
+            ><img src="images/market-farm.png" alt="Market booth"
+          /></picture>
           <br />
           Come and visit evey Tue & Fri from 7-11 a.m. outside the cocal
           library.
@@ -96,7 +137,7 @@
 
         <div class="spotLight3">
           <strong>24/7 Handyman Service</strong><br />
-          <img src="images/tools.png" alt="Toolbox" /><br />
+          <picture><img src="images/tools.png" alt="Toolbox" /></picture><br />
           Our local handyman is avalible 24/7. You can contact him at
           468-844-3936
         </div>
@@ -111,11 +152,13 @@
     </main>
 
     <footer>
-      <img
-        src="images/allen-logo-white.png"
-        alt="Allen Logo"
-        class="footer-logo"
-      />
+      <picture>
+        <img
+          src="images/allen-logo-white.png"
+          alt="Allen Logo"
+          class="footer-logo"
+        />
+      </picture>
       <h1>Allen Chamber of Commerce</h1>
       <p>301 Century Pkwy, Allen, TX 75013<br /></p>
       <p>allencommerce@gmail.com</p>
@@ -128,8 +171,7 @@
       </div>
 
       <hr />
-      &copy; <span id="year">year</span> | <strong>Sara M. Tague</strong> |
-      Texas
+      &copy; <span id="year">year</span> | Sara M. Tague | Texas
       <p id="lastmod"></p>
     </footer>
   </body>
