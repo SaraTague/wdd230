@@ -27,12 +27,12 @@ picture{
 }
 
 img[data-src] {
-    filter: blur(0.2em);
+    filter: blur(0.5em);
 }
 
 img {
     filter: blur(0em);
-    transition: filter .5s;
+    transition: filter 1s;
 }
 
 
