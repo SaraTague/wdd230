@@ -310,7 +310,7 @@ img {
   font-family: "Hind", sans-serif;
 }
 
-.number-of-visits {
+.label {
   display: block;
   border-radius: 10px;
   border: 2px #e5e5e5 solid;
@@ -322,13 +322,3 @@ img {
   text-align: center;
 }
 
-.label {
-	font-family: Arial, sans-serif;
-	font-weight: 700;
-}
-
-#visits {
-	color: navy;
-	font-weight: bolder;
-	font-size: larger;
-}
