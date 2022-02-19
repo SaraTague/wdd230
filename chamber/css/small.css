@@ -265,3 +265,70 @@ hr {
   text-align: center;
   font-size: 1.1rem;
 }
+
+/* Discover Page */
+
+.discover-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill);
+  justify-content: center;
+  grid-gap: 10px;
+  margin: auto;
+}
+
+article {
+  display: block;
+  border-radius: 10px;
+  border: 2px #e5e5e5 solid;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  width: fill;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+article img {
+  width: 100%;
+}
+
+picture {
+  display: block;
+}
+
+img[data-src] {
+  filter: blur(0.5em);
+}
+
+img {
+  filter: blur(0em);
+  transition: filter 1.5s;
+}
+
+.discover-title {
+  font-size: 2em;
+  font-family: "Hind", sans-serif;
+}
+
+.number-of-visits {
+  display: block;
+  border-radius: 10px;
+  border: 2px #e5e5e5 solid;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  width: fill;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}

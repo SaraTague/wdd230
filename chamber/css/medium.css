@@ -94,4 +94,17 @@
     margin-right: 5rem;
     margin-left: 5rem;
   }
+
+  .discover-content {
+      display: flex;
+      display: flex; flex-wrap: wrap;
+    }
+
+    article {
+      width: 25em;
+    }
+
+    article:hover {
+      box-shadow: 0 0 50px #333;
+    }
 }

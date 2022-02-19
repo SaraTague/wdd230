@@ -86,6 +86,13 @@
         margin-right: 20rem;
         margin-left: 20rem;
       }
+      .discover-content {
+        display: flex;
+        display: flex; flex-wrap: wrap;
+      }
+      article {
+        width: 22.5em;
 
+      }
   }
   

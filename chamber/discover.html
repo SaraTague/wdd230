@@ -21,8 +21,12 @@
       rel="stylesheet"
     />
     <script src="js/script.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
   </head>
   <body>
+    <div id="banner">
+      Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </div>
     <header>
       <h1>Allen Chamber of Commerce</h1>
       <div id="logo">
@@ -60,69 +64,154 @@
 
       <div class="today"></div>
     </header>
-    <main>
+    <h2 class="discover-title">Discover more about Allen!</h2>
+    <main class="discover-content">
+      
+      <section>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    </section>
 
-        <h2>Discover more about Allen!</h2>
+      <article>
+        <h2>Allen Eagle Stadium</h2>
         <picture
-        ><img
-          src="images/placeholder-image.png"
-          data-src="images/allen-eagle-stadium.webp"
-          alt="Stadium"
-      /></picture>
-      <picture
-        ><img
-          src="images/placeholder-image.png"
-          data-src="images/celebration-park.webp"
-          alt="Park"
-      /></picture>
-      <picture
-        ><img
-          src="images/placeholder-image.png"
-          data-src="images/city-hall.webp"
-          alt="City Hall"
-      /></picture>
-      <picture
-        ><img
-          src="images/placeholder-image.png"
-          data-src="images/collin-college.webp"
-          alt="College"
-      /></picture>
-      <picture
-        ><img
-          src="images/placeholder-image.png"
-          data-src="images/public-library.webp"
-          alt="Library"
-      /></picture>
-      <picture
-        ><img
-          src="images/placeholder-image.png"
-          data-src="images/texas-health.webp"
-          alt="Hospital"
-      /></picture>
+          ><img
+            class="allen-pic"
+            src="images/placeholder-image.png"
+            data-src="images/allen-eagle-stadium.webp"
+            alt="The Allen Highschool Stadium"
+        /></picture>
+        <p>
+          Eagle Stadium is a football stadium in Allen, Texas. It is owned and
+          operated by the Allen Independent School District and is home of the
+          Allen High School Eagles.
+        </p>
+      </article>
 
+      <article>
+        <h2>Celebration Park</h2>
+        <picture
+          ><img
+            class="allen-pic"
+            src="images/placeholder-image.png"
+            data-src="images/celebration-park.webp"
+            alt="Celebration Park"
+        /></picture>
+        <p>
+          Allen's thriving local park system provides its residents and visitors
+          with access to an active outdoor lifestyle.
+        </p>
+      </article>
 
+      <article>
+        <h2>City Hall</h2>
+        <picture
+          ><img
+            class="allen-pic"
+            src="images/placeholder-image.png"
+            data-src="images/city-hall.webp"
+            alt="City Hall"
+        /></picture>
+        <p>
+          The Allen City Hall is administered by the City of Allen in Texas. It
+          maintains the offices of various city departments, such as community
+          services and public and media relations.
+        </p>
+      </article>
 
-      <picture
-      ><img
-        src="images/placeholder-image.png"
-        data-src="images/"
-        alt="Hospital"
-    /></picture>
-    <picture
-    ><img
-      src="images/placeholder-image.png"
-      data-src="images/texas-health.webp"
-      alt="Hospital"
-  /></picture>
-  <picture
-  ><img
-    src="images/placeholder-image.png"
-    data-src="images/texas-health.webp"
-    alt="Hospital"
-/></picture>
+      <article>
+        <h2>Collin College</h2>
+        <picture
+          ><img
+            class="allen-pic"
+            src="images/placeholder-image.png"
+            data-src="images/collin-college.webp"
+            alt="Collin College"
+        /></picture>
+        <p>
+          Founded in 1985, the district has grown as the county has grown from
+          around 5,000 students in 1986 to more than 58,000 credit and
+          non-credit students.
+        </p>
+      </article>
 
+      <article>
+        <h2>Public Library</h2>
+        <picture
+          ><img
+            class="allen-pic"
+            src="images/placeholder-image.png"
+            data-src="images/public-library.webp"
+            alt="Public Library"
+        /></picture>
+        <p>
+          This 54,000 square-foot, two-story facility serves as the main hub for
+          the community’s cultural, informational and learning needs.
+        </p>
+      </article>
 
+      <article>
+        <h2>Texas Health Resources</h2>
+        <picture
+          ><img
+            class="allen-pic"
+            src="images/placeholder-image.png"
+            data-src="images/texas-health.webp"
+            alt="Texas Health"
+        /></picture>
+        <p>
+          Texas Health Resources is one of the largest faith-based, nonprofit
+          health systems in the United States and the largest in North Texas in
+          terms of inpatients and outpatients served.
+        </p>
+      </article>
 
+      <article>
+        <h2>Village Mall</h2>
+        <picture
+          ><img
+            class="allen-pic"
+            src="images/placeholder-image.png"
+            data-src="images/village-mall.webp"
+            alt="Village Mall"
+        /></picture>
+        <p>
+          The Village at Allen is a dynamic shopping, dining and entertainment
+          destination that combines one of a kind retail, hospitality, and
+          entertainment options.
+        </p>
+      </article>
+
+      <article>
+        <h2>Watter Station</h2>
+        <picture
+          ><img
+            class="allen-pic"
+            src="images/placeholder-image.png"
+            data-src="images/watter-station.webp"
+            alt="Watter Station"
+        /></picture>
+        <p>
+          The Allen Water Station is a district of structures representing
+          different items built in the 1870s by the Houston and Texas Central
+          Railroad at the Allen Depot water stop.
+        </p>
+      </article>
+
+      <article>
+        <h2>Watters Creek</h2>
+        <picture
+          ><img
+            class="allen-pic"
+            src="images/placeholder-image.png"
+            data-src="images/watters-creek.webp"
+            alt="Watters Creek"
+        /></picture>
+        <p>
+          Watters Creek is an upscale outdoor shopping center. It's a pleasant
+          spot very popular with the local folks, things to do and some good
+          green space, some room to move.
+        </p>
+      </article>
     </main>
 
     <footer>
