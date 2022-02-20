@@ -310,15 +310,8 @@ img {
   font-family: "Hind", sans-serif;
 }
 
-.label {
-  display: block;
-  border-radius: 10px;
-  border: 2px #e5e5e5 solid;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  width: fill;
-  font-weight: bold;
-  font-size: 1em;
+.number-visits {
+  width: 95%;
+  font-weight: bolder;
   text-align: center;
 }
-
