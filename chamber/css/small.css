@@ -270,7 +270,6 @@ hr {
 
 .discover-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill);
   justify-content: center;
   grid-gap: 10px;
   margin: auto;
@@ -282,7 +281,7 @@ article {
   border: 2px #e5e5e5 solid;
   padding-left: 0.75em;
   padding-right: 0.75em;
-  width: fill;
+
   font-weight: bold;
   font-size: 1em;
   text-align: center;
