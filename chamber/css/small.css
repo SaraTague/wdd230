@@ -44,6 +44,7 @@ main div {
   background-color: rgb(212, 209, 209);
   padding: 1rem;
   text-align: center;
+  border-radius: 8px;
 }
 
 h1 {
@@ -85,6 +86,7 @@ strong {
 
 .callToAction picture img {
   width: 100%;
+  border-radius: 8px;
 }
 
 .callToAction h2 {
@@ -97,6 +99,9 @@ strong {
   width: auto;
   height: fit-content;
   font-size: 1.9rem;
+  z-index: 1;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .callToAction button {
@@ -104,12 +109,17 @@ strong {
   grid-row: 2/3;
   align-self: end;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
   font-size: 0.9em;
   color: #ffffff;
   background-color: #114277;
+  border: none;
+}
+
+button:hover {
+  box-shadow: 0 0 15px rgb(0, 0, 75);
 }
 
 .news {
@@ -314,3 +324,6 @@ img {
   font-weight: bolder;
   text-align: center;
 }
+
+/* Join Page */
+

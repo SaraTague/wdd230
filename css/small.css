@@ -48,20 +48,10 @@ nav ul {
   list-style-type: none;
 }
 
-
-
-
-
-
-
-
-
-
-
 nav {
   grid-column: 3 / 6;
-	grid-row: 1 / 2;
-  
+  grid-row: 1 / 2;
+
   margin: 0 auto;
   max-width: 760px;
   background-color: var(--primary-color);
@@ -99,11 +89,3 @@ nav {
 .responsive li {
   display: block;
 }
-
-
-
-
-
-
-
-

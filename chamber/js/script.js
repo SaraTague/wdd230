@@ -1,7 +1,8 @@
-//last modified date and time
-
 const themod = document.querySelector("#lastmod");
-lastmod.textContent = `Page last updated: ${document.lastModified}`;
+lastmod.textContent = `This page was last updated: ${document.lastModified}`;
+
+year.innerHTML = new Date().getFullYear();
+
 
 //Date for navigation
 

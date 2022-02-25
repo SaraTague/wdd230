@@ -1,0 +1,60 @@
+:root {
+	--back: #7FB9C2;
+  --back2: #628CA6;
+  --foredark: #E7F0ED;
+	--forelight: #E7FFED;
+	--border: #BBBBBB;
+	--borderlight: #545454;
+	--shadow: #628CA6;
+	--zebra: #E7FFED;
+}
+
+table {
+	margin: 10px auto;
+	box-shadow: 10px 10px 13px 0px var(--shadow);
+	border-collapse: collapse;
+    border-color: #BBBBBB;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+tr:first-child th {
+	background-color: var(--back);
+    font-size: 1.4rem;
+    color:black;
+    font-weight: bolder;
+}
+
+.coloms {
+    color: white;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+
+tfoot {
+    background-color: var(--back);
+    font-size: .80em;
+}
+
+.november {
+    background-color: #628CA6;
+    color: white;
+}
+
+.bf {
+    font-style: italic;
+}
