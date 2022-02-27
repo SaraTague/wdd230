@@ -1,6 +1,6 @@
 @media only screen and (min-width: 32.5em) {
   main {
-    grid-column-gap: .5em;
+    grid-column-gap: 0.5em;
   }
 
   .join {
@@ -75,7 +75,6 @@
   }
   .spotLight1 {
     margin: 0.5rem;
-    
   }
   .spotLight2 {
     margin: 0.5rem;
@@ -97,16 +96,85 @@
   }
 
   .discover-content {
-      display: flex;
-      display: flex; flex-wrap: wrap;
-    }
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    article {
-      width: 25em;
-    }
+  article {
+    width: 25em;
+  }
 
-    article:hover {
-      box-shadow: 0 0 15px rgb(71, 71, 71);
+  article:hover {
+    box-shadow: 0 0 15px rgb(95, 95, 95);
+  }
+
+  /* Join page */
+  .testimonial-one {
+    display: block;
+    max-width: 10em;
+    font-size: 0.75em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 1em;
+  }
+
+  .testimonial-four {
+    display: none
+  }
+
+  .testimonial-two {
+    display: block;
+    max-width: 10em;
+    font-size: 0.75em;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 1em;
+  }
+
+  .testimonial-three {
+    display: block;
+    max-width: 10em;
+    font-size: 0.75em;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-left: 1em;
+  }
+
+  .thank-you-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .join-title {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .join-form {
+    grid-column: 2/3;
+    grid-row: 1/4;
+
+  }
+
+
+  .thank-you {
+    display: grid;
+    width: 98%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-self: center;
+  }
+  .thank-you-main {
+    display: grid;
+    align-content: center;
+  }
+
+  form input.submitBtn {
+    display: grid;
+    grid-column: 2/3;
+  
     }
 
 }

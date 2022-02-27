@@ -7,7 +7,7 @@
     <title>Allen Chamber of Commerce</title>
     <meta
       name="description"
-      content="Home page for the Allen Texas Chamber of Commerce Site"
+      content="Thank you page for joining the chamber"
     />
     <link rel="shortcut icon" href="../favicon.ico" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <script src="js/script.js" defer></script>
-    <script src="js/windchill.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
   </head>
   <body>
     <div id="banner">
@@ -67,92 +67,17 @@
 
       <div class="today"></div>
     </header>
-    <main class="main">
-      <section class="callToAction">
-        <h2>Welcom to Allen Texas!</h2>
-
-        <picture>
-          <source
-            media="(min-width: 1100px)"
-            srcset="images/flag-texas.jpg"
-          />
-          <source
-            media="(min-width: 32.5em)"
-            srcset="images/flag-texas-medium.webp"
-          />
-          <source
-            media="(max-width: 599px)"
-            srcset="images/flag-texas-medium.webp"
-          />
-          <img src="images/flag-texas.webp" alt="Texas flag" />
-        </picture>
-
-        <button type="button" class="join-button">
-          Click here to join the chamber
-        </button>
-      </section>
-
-      <div class="event">
-        Grand Opening<br />
-        <strong>Cupcake shop</strong> 🧁<br />
-        Join us for the grand opening of the new cupcake shop, Friday at 11:00
-        a.m.
-      </div>
-
-      <div class="weather">
-        <strong>Weather</strong>
-
-        <p>Currently: <span id="temp">23</span>&#176;F</p>
-
+    <main class="thank-you-main">
+      <article class="thank-you">
         <picture
           ><img
-            class="weatherimg"
-            src="images/partly-cloudy.webp"
-            alt="Sun with clouds covering it"
+            class="welcome-img"
+            src="images/welcome.jpg"
+            alt="Welcome graphic"
         /></picture>
-
-        <p>Wind Speed: <span id="speed">30</span> mph</p>
-        <p>Wind Chill: <span id="wind"></span></p>
-      </div>
-
-      <div class="news">
-        <strong>Allen News</strong><br />Work on improvements to Allen Heritage
-        Village are slated for completion by summer 2023.
-      </div>
-
-      <div class="spotLights">
-        <div class="spotLight1">
-          <strong>Local Moving Company</strong><br />
-          <picture><img src="images/truck.webp" alt="Moving truck" /></picture>
-
-          <br />
-          To learn more please contact 469-218-5339
-        </div>
-
-        <div class="spotLight2">
-          <strong>Weekly Farmers Market</strong><br />
-          <picture
-            ><img src="images/market-farm.webp" alt="Market booth"
-          /></picture>
-          <br />
-          Come and visit evey Tue & Fri from 7-11 a.m. outside the cocal
-          library.
-        </div>
-
-        <div class="spotLight3">
-          <strong>24/7 Handyman Service</strong><br />
-          <picture><img src="images/tools.webp" alt="Toolbox" /></picture><br />
-          Our local handyman is avalible 24/7. You can contact him at
-          468-844-3936
-        </div>
-      </div>
-
-      <div class="join">
-        <button>Join Us!</button>
-        <br />
-        Discover how to join the Allen Chamber of Commerce and discover the
-        benefits for you, and your organization!
-      </div>
+        <h2>Thank you!</h2>
+        <p>You have sucssefuly joined the Allen Chamber of Commerce!</p>
+      </article>
     </main>
 
     <footer>
