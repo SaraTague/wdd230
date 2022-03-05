@@ -41,7 +41,7 @@ body {
   padding: 0.5rem;
 }
 
-main div {
+.main div {
   background-color: white;
   padding: 1rem;
   text-align: center;
@@ -412,7 +412,7 @@ form textarea {
 }
 
 form input.submitBtn {
-display: grid;
+  display: grid;
   border: none;
   background-color: #000;
   color: white;
@@ -421,7 +421,6 @@ display: grid;
   margin: 0 0 2rem 2%;
   width: 95%;
   max-width: 20rem;
-
 }
 
 form input.submitBtn:hover {
@@ -429,7 +428,6 @@ form input.submitBtn:hover {
   cursor: pointer;
   background-color: #1c60aa;
   box-shadow: 0 0 15px rgb(95, 95, 95);
-
 }
 
 form label.top input:required {
@@ -448,7 +446,65 @@ form label.top input:required {
   border-radius: 10px;
 }
 
+/* Directory Page */
+
+.main-direct section h3{
+  font-size: 1em;
+}
+
 .cards {
+  width: auto;
+}
+
+.directory {
+  text-align: center;
+}
+
+.list-view img,
+.card-view > section h3 {
+  display: none;
+}
+
+.card-view img {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+.list-view > section h3 {
+  display: block;
+}
+
+.list-view section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr;
+  padding: 0.5em;
+}
+
+.card-view {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card-view section {
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 8px;
+  background-color: #1c61aa0e;
+}
+
+.list-view-btn {
+  padding: 0.5em;
+}
+
+.list-view-btn button {
+  padding: 0.2rem;
+  background-color: white;
+  border-radius: 8px;
+  margin: 1em;
+  border: none;
+}
+
+.list-view section:nth-child(2n) {
+  background-color: #1c61aa0e;
 }
