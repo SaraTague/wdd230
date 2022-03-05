@@ -1,5 +1,6 @@
 const requestURL =
-  "https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json"; 
+  "https://saratague.github.io/wdd230/chamber\data.json"; 
+
 const cards = document.querySelector(".cards");
 
 fetch(requestURL)
@@ -39,7 +40,6 @@ function displayProphets(prophet) {
   card.appendChild(h2);
   card.appendChild(birthDate);
   card.appendChild(birthPlace);
-  card.appendChild(hrline);
   card.appendChild(portrait);
 
   // Add/append the existing HTML div with the cards class with the section(card)
