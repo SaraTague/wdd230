@@ -172,7 +172,7 @@ button:hover {
   padding: 0;
 }
 
-.weather h4 {
+.weather h3 {
   font-size: xx-large;
   font-weight: bold;
   margin: 2px auto;
@@ -183,7 +183,7 @@ button:hover {
   padding-left: 20px;
 }
 
-.weather h5 {
+.weather h4 {
   text-align: center;
   font-size: medium;
   border-bottom: 2px white solid;
