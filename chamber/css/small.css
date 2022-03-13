@@ -162,10 +162,34 @@ button:hover {
 
 .weather {
   grid-area: 3 / 1 / 4 / 2;
+
+  padding: 0.5em;
 }
 
-.weatherimg {
-  width: 4em;
+.weather img {
+  float: left;
+  width: 100px;
+  padding: 0;
+}
+
+.weather h4 {
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 2px auto;
+  padding-top: 0.5em;
+}
+
+#current-temp {
+  padding-left: 20px;
+}
+
+.weather h5 {
+  text-align: center;
+  font-size: medium;
+  border-bottom: 2px white solid;
+  margin: 0;
+  margin-top: 13px;
+  padding-bottom: 5px;
 }
 
 .join {
@@ -330,6 +354,33 @@ img {
   text-align: center;
 }
 
+table {
+  margin: 10px auto;
+  border: thin solid #6c757d;
+  border-collapse: collapse;
+}
+
+tr:first-child th {
+  background-color: #219ebc;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+  font-size: 90%;
+}
+
+th,
+td {
+  padding: 7px 15px;
+  border: 1px solid #fff;
+  font-size: 90%;
+}
+
+th {
+  background-color: #8ecae6;
+  color: black;
+  font-size: 90%;
+}
+
 /* Join Page */
 
 .join-main {
@@ -374,10 +425,12 @@ form fieldset {
 }
 
 form legend {
-  color: white;
+  color: #1c60aa;
+  font-weight: bolder;
   padding: 0.7rem;
-  background-color: #000;
+  background-color: white;
   border-radius: 8px;
+  font-size: larger;
 }
 
 form label.top,
@@ -420,7 +473,7 @@ form input.submitBtn {
   padding: 0.75rem 1.5rem;
   margin: 0 0 2rem 2%;
   width: 95%;
-  max-width: 20rem;
+  max-width: auto;
 }
 
 form input.submitBtn:hover {
@@ -448,7 +501,7 @@ form label.top input:required {
 
 /* Directory Page */
 
-.main-direct section h3{
+.main-direct section h3 {
   font-size: 1em;
 }
 
@@ -507,4 +560,8 @@ form label.top input:required {
 
 .list-view section:nth-child(2n) {
   background-color: #1c61aa0e;
+}
+
+.list-view section {
+  background-color: #1142771f;
 }
