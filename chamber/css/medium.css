@@ -12,12 +12,10 @@
   }
 
   .callToAction button {
-
     align-self: center;
     padding: 20px;
     margin-left: 1.5rem;
     font-size: 1.5rem;
-
   }
 
   #logo img {
@@ -55,8 +53,7 @@
     display: grid;
     grid: 1fr / 1fr 1fr;
     align-items: center;
-}
-
+  }
 
   .callToAction {
     grid-column: 1/4;
@@ -102,7 +99,7 @@
   }
 
   .testimonial-four {
-    display: none
+    display: none;
   }
 
   .testimonial-two {
@@ -137,9 +134,7 @@
   .join-form {
     grid-column: 2/3;
     grid-row: 1/4;
-
   }
-
 
   .thank-you {
     display: grid;
@@ -156,25 +151,22 @@
   form input.submitBtn {
     display: grid;
     grid-column: 2/3;
-  
-    }
-    .list-view section {
-      grid-template-columns: repeat(4, 1fr);
+  }
+  .list-view section {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .card-view {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .spotlights{
+  .spotlights {
     grid-column: 1/4;
     display: flex;
     justify-content: space-around;
-    
   }
 
-  .spotlight{
-
+  .spotlight {
     margin: 10px;
   }
 }
