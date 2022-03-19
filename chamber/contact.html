@@ -21,7 +21,6 @@
       rel="stylesheet"
     />
     <script src="js/script.js" defer></script>
-    <script src="js/contact.js" defer></script>
   </head>
   <body>
     <div id="banner">
@@ -67,59 +66,65 @@
       <div class="today"></div>
     </header>
     <h2 >Contact the Allen Chamber of Commerce</h2>
-    <main class="contact-main">
+    <main class="join-main">
       
       <h2 class="contactus">
-        Want to get in contact with us? Write us a message below.
+        
       </h2>
 
-      <div id="feedback"></div>
-      <form class="formie" action="/my-handling-form-page" method="post">
-        <ul>
-          <li>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" />
-          </li>
-          <li>
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="user_email" />
-          </li>
-          <li>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-          </li>
-          <li class="messageButton">
-            <button type="submit">Send your message</button>
-          </li>
-        </ul>
-      </form>
 
+      <form method="get" action="thankyou-contact.html" class="contact-form">
+        <fieldset>
+            <legend>Message Us!</legend>
+            <label class="top">First Name*<input type="text" name="fname" required></label>
+            <label class="top">Last Name*<input type="text" name="lname" required></label>
+            <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Phone*<input type="tel" name="phone" required></label>
+            <label class="top">Message or Question:<br><textarea rows="3" name="bus-description"></textarea></label>
+        </fieldset>
+        <input type="submit" class="submit" value="Send Message">
+    </form>
 
+    <article class="contact-info">
 
+      <h2>Contact Information</h2>
+      <p>Hours are Mon-Fri 8am-5pm</p>
+      <p>+(469) 2589-2693</p>
+      <p>allencommerce@gmail.com</p>
+      <p>301 Century Pkwy, Allen, TX 75013</p>
+      <a
+        href="https://www.google.com/maps/place/Allen,+TX/@33.1141831,-96.7077114,13z/data=!3m1!4b1!4m5!3m4!1s0x864c172e4d9479bd:0xcae82aa992de2cd5!8m2!3d33.1031744!4d-96.6705503"
+        ><p class="address">&#128204;Map of Allen</p></a
+      >
+    </article>
 
     </main>
 
     <footer>
-      <picture>
-        <img
-          src="images/allen-logo-white.webp"
-          alt="Allen Logo"
-          class="footer-logo"
-        />
-      </picture>
-      <h1>Allen Chamber of Commerce</h1>
-      <p>301 Century Pkwy, Allen, TX 75013<br /></p>
-      <p>allencommerce@gmail.com</p>
-      <p>+(469) 2589-2693</p>
-      <div>
-        <a
-          href="https://www.google.com/maps/place/Allen,+TX/@33.1141831,-96.7077114,13z/data=!3m1!4b1!4m5!3m4!1s0x864c172e4d9479bd:0xcae82aa992de2cd5!8m2!3d33.1031744!4d-96.6705503"
-          ><p class="map">&#128204;Map of Allen</p></a
-        >
+      <div class="footer-seperation">
+        <section>
+          <picture>
+            <img
+              src="images/allen-logo-white.webp"
+              alt="Allen Logo"
+              class="footer-logo"
+            />
+          </picture>
+          <h1>Allen Chamber of Commerce</h1>
+          <p>+(469) 2589-2693</p>
+        </section>
+        <div class="contact">
+          <p>allencommerce@gmail.com</p>
+          <p>301 Century Pkwy, Allen, TX 75013</p>
+          <a
+            href="https://www.google.com/maps/place/Allen,+TX/@33.1141831,-96.7077114,13z/data=!3m1!4b1!4m5!3m4!1s0x864c172e4d9479bd:0xcae82aa992de2cd5!8m2!3d33.1031744!4d-96.6705503"
+            ><p class="map">&#128204;Map of Allen</p></a
+          >
+        </div>
       </div>
-
       <hr />
       &copy; <span id="year">year</span> | Sara M. Tague | Texas
+
       <p id="lastmod"></p>
     </footer>
   </body>

@@ -154,10 +154,16 @@
   }
   .list-view section {
     grid-template-columns: repeat(4, 1fr);
+    margin-left: 2em;
+    margin-right: 2em;
+    
   }
 
   .card-view {
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
   }
 
   .spotlights {
@@ -168,5 +174,24 @@
 
   .spotlight {
     margin: 10px;
+  }
+
+  .thank-you-main, .thank-contact-main {
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+  }
+
+  .thank {
+    width: 45em;
+  }
+
+  .contact-info {
+    width: auto;
+      margin-bottom: 2em;
+  }
+
+  .contact-main {
+    justify-content: center;
   }
 }
