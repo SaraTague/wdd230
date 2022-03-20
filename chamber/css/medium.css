@@ -11,7 +11,8 @@
     grid-auto-rows: minmax(min-content, max-content);
   }
 
-  .callToAction button {
+  .join-button,
+  join-two {
     align-self: center;
     padding: 20px;
     margin-left: 1.5rem;
@@ -59,6 +60,17 @@
     grid-column: 1/4;
     grid-row: 1/2;
   }
+
+  .callToAction h2 {
+    padding: 2rem;
+  }
+
+  .callToAction a {
+    text-align: center;
+    font-size: 2em;
+    width: 10em;
+  }
+
   .news {
     grid-column: 1/4;
     grid-row: 2/3;
@@ -137,9 +149,8 @@
   }
 
   form textarea {
-    width:103%;
-    
-    }
+    width: 103%;
+  }
 
   .thank-you {
     display: grid;
@@ -161,7 +172,6 @@
     grid-template-columns: repeat(4, 1fr);
     margin-left: 2em;
     margin-right: 2em;
-    
   }
 
   .card-view {
@@ -181,7 +191,8 @@
     margin: 10px;
   }
 
-  .thank-you-main, .thank-contact-main {
+  .thank-you-main,
+  .thank-contact-main {
     display: flex;
     padding: 2em;
     justify-content: center;
@@ -193,6 +204,6 @@
 
   .contact-info {
     width: auto;
-margin-top: 0;
+    margin-top: 0;
   }
 }

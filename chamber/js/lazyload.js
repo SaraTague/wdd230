@@ -1,35 +1,32 @@
-
-let imagesToLoad = document.querySelectorAll('img[data-src]');
+let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const imgOptions = {
-    threshold: 1,
-    rootMargin: '0px 0px 100px 0px'
-}
-
-const loadImages = (img) => {
-    img.setAttribute('src', img.getAttribute('data-src'));
-    img.onload = () => {
-        img.removeAttribute('data-src');
-    };
+  threshold: 1,
+  rootMargin: "0px 0px 100px 0px",
 };
 
-if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-            if(entry.isIntersecting) {
-                loadImages(entry.target);
-                observer.unobserve(entry.target);
-            }
-        });
-    });
+const loadImages = (img) => {
+  img.setAttribute("src", img.getAttribute("data-src"));
+  img.onload = () => {
+    img.removeAttribute("data-src");
+  };
+};
 
-    imagesToLoad.forEach((image) => {
-        observer.observe(image);
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        loadImages(entry.target);
+        observer.unobserve(entry.target);
+      }
     });
+  });
+
+  imagesToLoad.forEach((image) => {
+    observer.observe(image);
+  });
 } else {
-    imagesToLoad.forEach((image) => {
-        loadImages(image);
-    });
+  imagesToLoad.forEach((image) => {
+    loadImages(image);
+  });
 }
-
-

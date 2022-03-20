@@ -35,7 +35,6 @@ function displaybusinesses(businesses) {
   webLink.title = `Visit ${businesses.name} Website`;
   webLink.appendChild(imageLogo);
 
-  
   card.appendChild(webLink);
   card.appendChild(name);
 

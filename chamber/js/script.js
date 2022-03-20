@@ -3,7 +3,6 @@ lastmod.textContent = `This page was last updated: ${document.lastModified}`;
 
 year.innerHTML = new Date().getFullYear();
 
-
 //Date for navigation
 
 const datefield = document.querySelector(".today");
