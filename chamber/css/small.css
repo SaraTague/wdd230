@@ -24,7 +24,7 @@ h1 {
 
 h2 {
   text-align: center;
-  color: #1c60aa;
+  color: rgb(0, 73, 146);
 }
 
 h3,
@@ -60,12 +60,12 @@ strong {
 .callToAction h2 {
   grid-column: 1/3;
   grid-row: 1/2;
-  padding: 1.5rem;
+  padding: 2rem;
   color: white;
-  background-color: #00000086;
+  background-color: #000000c9;
   margin: 0;
   height: fit-content;
-  font-size: 1.5rem;
+  font-size: 2rem;
   z-index: 1;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -81,14 +81,15 @@ strong {
   margin-right: 1.5rem;
   font-size: 1em;
   color: #ffffff;
-  background-color: #000000a6;
+  background-color: #000000c9;
   border: none;
-  box-shadow: 0 0 15px rgb(95, 95, 95);
+  
 }
 
 button:hover {
-  box-shadow: 0 0 15px rgb(0, 0, 75);
+  box-shadow: 0 0 15px rgb(0, 0, 0);
   cursor: pointer;
+  font-weight: bolder;
 }
 
 .news,
@@ -141,18 +142,20 @@ button:hover {
   padding: 1rem;
   text-decoration: none;
   color: white;
+  
 }
 
 .join button {
   display: block;
   padding: 1rem;
-  background-color: rgb(0, 73, 146);
+  background-color: rgb(0, 38, 77);
   border-radius: 8px;
   margin: 0.25em auto;
-  font-weight: bolder;
+font-size: 1.25em;
   text-decoration: none;
   color: white;
   width: 50%;
+  border: none;
 }
 
 .join a {
@@ -176,9 +179,10 @@ button:hover {
 }
 
 .weather img {
-  float: left;
+float: left;
   width: 100px;
   padding: 0;
+  padding-left: 2.5em;
 }
 
 .weather h3 {
@@ -289,10 +293,12 @@ footer {
 
 .map {
   list-style: none;
-  text-decoration: none;
   color: white;
 }
 
+.contact a {
+  text-decoration: none;
+}
 .footer-logo {
   width: 120px;
   padding-top: 1rem;
@@ -330,8 +336,8 @@ article {
   padding-left: 0.75em;
   padding-right: 0.75em;
   font-weight: bold;
-  font-size: 1em;
   text-align: center;
+
 }
 
 article img {
@@ -410,6 +416,7 @@ th {
   box-shadow: 0 0 15px rgb(95, 95, 95);
 }
 .thank-you {
+  margin: 1em;
   padding: 0.5em;
 }
 
@@ -419,7 +426,7 @@ form fieldset {
   margin: 10px;
   border: 2px #e5e5e5 solid;
   border-radius: 8px;
-  padding: 1rem;
+
   padding-inline-end: 2rem;
 }
 
@@ -443,7 +450,6 @@ form label.top input,
 form label.top select {
   -webkit-appearance: none;
   display: block;
-  font-size: 1rem;
   border: 2px #e5e5e5 solid;
   border-radius: 80px;
   padding: 0.75rem;
@@ -458,10 +464,10 @@ form label.sbs {
 }
 
 form textarea {
-  width: 103%;
+width:108%;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding: 0.5rem;
+
 }
 
 form input.submit {
@@ -564,6 +570,10 @@ form label.top input:required {
 
 /* contact */
 
+.thank {
+  margin: 1em;
+}
+
 .feedback {
   background-color: antiquewhite;
   position: absolute;
@@ -597,5 +607,10 @@ form label.top input:required {
 
 .contact-info {
 
-  margin: .5em;
+  padding: .5em;
+
+}
+
+.contact-page-img {
+  width: 12em;
 }

@@ -136,6 +136,11 @@
     grid-row: 1/4;
   }
 
+  form textarea {
+    width:103%;
+    
+    }
+
   .thank-you {
     display: grid;
     width: 98%;
@@ -188,10 +193,6 @@
 
   .contact-info {
     width: auto;
-      margin-bottom: 2em;
-  }
-
-  .contact-main {
-    justify-content: center;
+margin-top: 0;
   }
 }
