@@ -1,0 +1,101 @@
+{
+    "businesses": [
+      {
+        "name": "A/C Works",
+        "address": "4025 E University Dr, Suite 100, McKinney, TX 75069",
+        "phone": "214-733-5711",
+        "website": "https://www.myACworks.com",
+        "imgfile": "images/company1.gif",
+        "membership": "Gold",
+        "logourl": "images/company1.gif"
+      },
+      {
+        "name": "ABC Heating & Air Conditioning, Inc.",
+        "address": "1209 N Ave #7, Plano, TX 75074",
+        "phone": "972-423-7380",
+        "website": "https://www.abcheatingandair.com",
+        "imgfile": "images/company2.gif",
+        "membership": "Gold"
+      },
+      {
+        "name": "AC Pros",
+        "address": "577 Sterling Drive, Richardson, TX 75081",
+        "phone": "972-591-0199",
+        "website": "https://www.acprostx.com",
+        "imgfile": "images/company3.gif",
+        "membership": "NP"
+      },
+      {
+        "name": "Accasia's Event Venue",
+        "address": "902 Country Lane, Allen, TX 75002",
+        "phone": "972-359-9273",
+        "website": "https://www.accasiaevents.com",
+        "imgfile": "images/company4.gif",
+        "membership": "NP"
+      },
+      {
+        "name": "Advanced Landscape Management, LLC",
+        "address": "902 Country Lane, Allen, TX 75002",
+        "phone": "972-359-9273",
+        "website": "https://www.advancedlandscape.net",
+        "imgfile": "images/company5.gif",
+        "membership": "NP"
+      },
+      {
+        "name": "Advanced Tree & Shrub Care, Inc.",
+        "address": "590 Meandering Way, Fairview, TX 75069",
+        "phone": "214-544-8733",
+        "website": "https://advancedtreecareinc.com",
+        "imgfile": "images/company6.gif",
+        "membership": "Silver"
+      },
+      {
+        "name": "Advancial Federal Credit Union",
+        "address": "1259 W. Exchange Pkwy., Suite 100, Allen, TX 75013",
+        "phone": "972-201-1763",
+        "website": "https://www.advancial.org",
+        "imgfile": "images/company7.gif",
+        "membership": "Bronze"
+      },
+      {
+        "name": "Advantage Self Storage Allen",
+        "address": "1210 W. McDermott Drive, Allen, TX 75013",
+        "phone": "972-390-8883",
+        "website": "https://www.advantagestorage.net",
+        "imgfile":"images/company8.gif",
+        "membership": "Bronze"
+      },
+      {
+        "name": "AFLAC - Mary Walker, Benefits Advisor",
+        "address": "Allen, TX 75604",
+        "phone": "972-679-5820",
+        "website": "https://www.alfacl.com",
+        "imgfile": "images/company9.gif",
+        "membership": "Bronze"
+      },
+      {
+        "name": "Allen Dental Center",
+        "address": "300 West Boyd Dr., Allen, TX 75013",
+        "phone": "972-349-1127",
+        "website": "https://www.allendentist.com",
+        "imgfile": "images/company10.gif",
+        "membership": "Silver"
+      },
+      {
+        "name": "Allen Americans Professional Hockey Club",
+        "address": "200 E. Stacy Rd. Building #1350, Allen, TX 75002",
+        "phone": "972-912-1000",
+        "website": "https://www.allenamericans.com",
+        "imgfile": "images/company11.gif",
+        "membership": "Gold"
+      },
+      {
+        "name": "Allen Community Band",
+        "address": "P.O. Box 1606, Allen, TX 75013",
+        "phone": "972-979-4351",
+        "website": "https://www.allencommunityband.com",
+        "imgfile": "images/company12.gif",
+        "membership": "NP"
+      }
+    ]
+}
