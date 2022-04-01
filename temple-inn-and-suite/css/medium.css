@@ -3,7 +3,7 @@
 		display: flex;
 	}
 	.navigation li {
-		display: block; /* change state in small view */
+		display: block;
 		flex: 1 1 auto;
 	}
 	.navigation a {
@@ -12,4 +12,16 @@
 	.navigation li:first-child {
 		display: none;
 	}
+
+	.footer-seperation {
+		display: grid;
+		grid: 1fr / 1fr 1fr ;
+		align-items: center;
+	  }
+
+	  .footer-info, .footer-info-two {
+		  display: inline;
+		  padding-bottom: 5px;
+	  }
+
 }

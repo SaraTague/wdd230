@@ -15,14 +15,17 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="js/script.js" defer></script>
     <script src="js/dates.js" defer></script>
     <script src="js/weather.js" defer></script>
-    <script src="js/spotlights.js" defer></script>
+    <!--<script src="js/spotlights.js" defer></script>-->
   </head>
   <body>
     <header>
@@ -46,51 +49,52 @@
           <li><a href="temple.html">Temples</a></li>
         </ul>
       </nav>
-
-      
     </header>
     <main class="home-main">
-      <h2>Dallas Temple Inn & Suites</h2>
+      <h2 class="home-headder">Dallas Temple Inn & Suites</h2>
 
       <article class="callToAction">
-        <h2>Welcom to Allen Texas!</h2>
-
         <picture>
-          <source
-            media="(min-width: 1300px)"
-            srcset="images/bluebonnets.webp"
+          <img
+            class="calltoactionimage"
+            src="images/temple7.jpg"
+            alt="Temple Spire"
           />
-          <source
-            media="(min-width: 32.5em)"
-            srcset="images/flag-texas-medium.webp"
-          />
-          <source
-            media="(max-width: 599px)"
-            srcset="images/flag-texas-medium.webp"
-          />
-          <img src="images/flag-texas.webp" alt="Texas flag" />
         </picture>
-
         <a class="reservation-button" href="reservation.html"
           >Make a reservation</a
         >
+        <h3 class="visittoday">Vistit the Dallas Temple today!</h3>
       </article>
 
       <article class="service-one">service</article>
 
       <article class="service-two">service</article>
 
-      <article class="weather">
-        <h2>Current Weather</h2>
-        <img src="" alt="" id="weathericon" />
-        <h3><span id="current-temp"></span> &#176;F</h3>
-        <h4><span id="desc"></span></h4>
-        <hr />
-        <p>Wind Speed: <span id="speed"></span> mph</p>
-        <p>Wind Chill: <span id="windchill"></span></p>
-      </article>
+      <div class="weather-one">
+        <h2>Weather</h2>
 
-      <div class="spotlights"></div>
+        <h3 class="cityName"></h3>
+
+        <figure><img src="" alt="" id="weatherIcon"><figcaption></figcaption></figure>
+
+        <section class="weatherInfo">
+            <p class="humidityDiv"></p>
+            <p class="temp"></p>
+            <p class="wind-speed"></p>
+            <p class="wind-chill"></p>
+        </section>
+        
+     </div>
+     <section class=”weather”>
+      <div class=”container”>
+        <div class=”forecast”>
+          // here we populate the 7 days forecast
+        </div>
+      </div>
+    </section>
+
+      <!--<div class="spotlights"></div> -->
     </main>
 
     <footer>
@@ -103,35 +107,44 @@
               class="footer-logo"
             />
           </picture>
-          <p>+(972) 991-1273</p>
-        </section>
-        <div class="contact">
-          <p>dallastemple@lds.net</p>
           <a
             href="https://www.bing.com/maps?q=dallas+texas+temple&cvid=1cb8584415734dfeb6a4beb9f1433755&aqs=edge.0.0j69i57j0l7.5243j0j1&pglt=513&FORM=ANNAB1&PC=DCTS"
             ><p class="map">&#128204;Inn & Suite Location</p></a
           >
+        </section>
+        <div class="contact">
+          <div class="social-media">
+            <a href="https://www.facebook.com/ChurchofJesusChrist/"
+              ><picture
+                ><img
+                  class="icons"
+                  src="images/facebook-icon.png"
+                  alt="Facebook Logo" /></picture
+            ></a>
+            <a href="https://www.instagram.com/churchofjesuschrist/"
+              ><picture
+                ><img
+                  class="icons"
+                  src="images/instagram-icon.png"
+                  alt="Instagram logo" /></picture
+            ></a>
+            <a href="https://twitter.com/ldschurch"
+              ><picture
+                ><img
+                  class="icons"
+                  src="images/twitter-icon.png"
+                  alt="Twitter logo" /></picture
+            ></a>
+          </div>
+          <p>+(972) 991-1273</p>
+          <p>dallastemple@lds.net</p>
+          <div class="today"></div>
         </div>
       </div>
-      &copy; <span id="year">year</span> | Sara M. Tague | Texas
-      <p id="lastmod"></p>
-      <div class="social-media">
-        <a href="https://www.facebook.com/ChurchofJesusChrist/"
-          ><picture
-            ><img
-              class="icons"
-              src="images/facebook-icon.png"
-              alt="Facebook Logo" /></picture
-        ></a>
-        <a href="https://www.instagram.com/churchofjesuschrist/"
-          ><picture
-            ><img
-              class="icons"
-              src="images/instagram-icon.png"
-              alt="Instagram logo" /></picture
-        ></a>
-      </div>
-      <div class="today"></div>
+      <p class="footer-info">
+        &copy; <span id="year">year</span> | Sara M. Tague | Texas |
+      </p>
+      <p class="footer-info-two" id="lastmod"></p>
     </footer>
   </body>
 </html>

@@ -1,3 +1,37 @@
 @media only screen and (min-width: 60em) {
-
+  .callToAction a {
+    font-size: 1.5em;
+    width: 14em;
+    height: 3em;
+    border-radius: 8px;
+    margin-left: 12%;
+    margin-top: 5%;
+    padding-top: 1.7em;
+  }
+  header {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
+  nav {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    justify-self: center;
+  }
+  .navigation {
+    padding-top: 1.5em;
+    padding-right: 10%;
+    justify-content: right;
+  }
+  .navigation a {
+    margin-left: 1.5em;
+  }
+  .header-logo {
+    width: 4em;
+    padding-left: 2em;
+  }
+  h1 {
+    font-size: 1em;
+    padding-left: 2em;
+  }
 }

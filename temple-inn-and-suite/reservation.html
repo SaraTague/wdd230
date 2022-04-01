@@ -17,9 +17,17 @@
 
     <script src="js/script.js" defer></script>
     <script src="js/dates.js" defer></script>
+    <script src="js/reservation.js" defer></script>
   </head>
   <body>
     <header>
+      <picture>
+        <img
+          src="images/temple-logo-black.png"
+          alt="Dallas Temple Inn logo"
+          class="header-logo"
+        />
+      </picture>
       <h1>Dallas Temple Inn & Suites</h1>
      
       <nav>
@@ -32,48 +40,173 @@
         </ul>
       </nav>
 
-      <div class="today"></div>
+
     </header>
     <main class="reservation-main">
       <h2>Make a Reservation</h2>
       <p>6363 Willow Ln, Dallas, TX 75230</p>
+
+      <form method="post" action="#" class="grid">
+        <fieldset>
+          <label>Enter one letter:
+            <input type="text" size="1" name="input1" required pattern="[A-Za-z]">
+          </label>
+        </fieldset>
+      
+        <fieldset>
+          <!-- this demonstrates the two ways to use labels (for) and (surround) - demonstrate what happens -->
+          <fieldset class="nestedfieldset">
+            <legend>Radio Buttons <em>(Choose one)</em></legend>
+            <div class="selection">
+              <input type="radio" name="time" id="time1" value="8" checked>
+              <label for="time1">8:00 a.m.</label>
+              <input type="radio" name="time" id="time2" value="9">
+              <label for="time2">9:00 a.m.</label>
+              <input type="radio" id="time3" name="time" value="10">
+              <label for="time3">10:00 a.m.</label>
+              <input type="radio" id="time4" name="time" value="11">
+              <label for="time4">11:00 a.m.</label>
+            </div>
+          </fieldset>
+          <fieldset class="nestedfieldset">
+            <legend>Checkbox <em>(Select all that apply)</em></legend>
+            <div class="selection">
+              <input type="checkbox" id="coding" name="interest" value="coding" checked>
+              <label for="coding"> Coding</label>
+              <input type="checkbox" id="music" name="interest" value="music">
+              <label for="music">Music</label>
+              <input type="checkbox" id="football" name="interest" value="football">
+              <label for="football">Football</label>
+              <input type="checkbox" id="gardening" name="interest" value="gardening">
+              <label for="gardening">Gardening</label>
+            </div>
+          </fieldset>
+        </fieldset>
+      
+        <fieldset>
+          <label for="zip">Zip Code:
+            <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"></label>
+          <!-- use the label example here -->
+          <label>Phone:
+            <input type="tel" name="phone" placeholder="###-###-####">
+          </label>
+          <label>eMail:
+            <input type="email" name="email" placeholder="user@email.org"></label>
+          <label for="u">URL:
+            <input type="url" name="u" id="u" value="http://www.ibm.com"></label>
+        </fieldset>
+      
+        <fieldset>
+          <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <span id="ratingvalue">5</span>
+          </label>
+      
+          <datalist id="tickmarks">
+            <option value="0">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+          </datalist>
+      
+          <label>Browser:
+            <input name="browsers" list="browserlist"></label>
+          <datalist id="browserlist">
+            <option value="Google Chrome">
+            <option value="Mozilla Firefox">
+            <option value="Microsoft Edge">
+          </datalist>
+          <br><br>
+          <label>
+            <select name="browsers" id="selectbrowser" onchange="selectResponse()">
+              <option value="" disabled selected>Select a Browser ...</option>
+              <option value="Chrome">Google Chrome</option>
+              <option value="Firefox">Mozila Firefox</option>
+              <option value="MS Edge">MS Edge</option>
+              <option value="Brave">Brave</option>
+            </select></label>
+        </fieldset>
+      
+        <fieldset>
+          <label for="search">Search: </label><input type="search" id="search"><br>
+          <label for="month">Month: </label> <input type="month" id="month"><br>
+          <label for="week">Week: </label> <input type="week" id="week">
+        </fieldset>
+      
+        <fieldset>
+          <label>Date Picker:
+            <input type="date" name="theDate"></label><br>
+          <label>Choose a color:
+            <input type="color" name="color"></label>
+          <hr>
+          <div class="buttons bottom">
+      
+            <input type="submit" class="sbutton"><br>
+            <input type="button" value="Button Value" class="sbutton"><br>
+            <button type="button" class="sbutton">Button Text</button>
+          </div>
+        </fieldset>
+      </form>
+      
+      <div id="selected"></div>
+
     </main>
 
     <footer>
       <div class="footer-seperation">
         <section>
           <picture>
-            <img src="#" alt="Dallas Temple Inn logo" class="footer-logo" />
+            <img
+              src="images/temple-logo.png"
+              alt="Dallas Temple Inn logo"
+              class="footer-logo"
+            />
           </picture>
-          <p>Dallas Temple Inn & Suites</p>
-          <p>+(972) 991-1273</p>
-        </section>
-        <div class="contact">
-          <p>dallastemple@lds.net</p>
-          <p>6363 Willow Ln, Dallas, TX 75230</p>
           <a
             href="https://www.bing.com/maps?q=dallas+texas+temple&cvid=1cb8584415734dfeb6a4beb9f1433755&aqs=edge.0.0j69i57j0l7.5243j0j1&pglt=513&FORM=ANNAB1&PC=DCTS"
             ><p class="map">&#128204;Inn & Suite Location</p></a
           >
+        </section>
+        <div class="contact">
+          <div class="social-media">
+            <a href="https://www.facebook.com/ChurchofJesusChrist/"
+              ><picture
+                ><img
+                  class="icons"
+                  src="images/facebook-icon.png"
+                  alt="Facebook Logo" /></picture
+            ></a>
+            <a href="https://www.instagram.com/churchofjesuschrist/"
+              ><picture
+                ><img
+                  class="icons"
+                  src="images/instagram-icon.png"
+                  alt="Instagram logo" /></picture
+            ></a>
+            <a href="https://twitter.com/ldschurch"
+            ><picture
+              ><img
+                class="icons"
+                src="images/twitter-icon.png"
+                alt="Twitter logo" /></picture
+          ></a>
+          </div>
+          <p>+(972) 991-1273</p>
+          <p>dallastemple@lds.net</p>
+          <div class="today"></div>
         </div>
       </div>
-      <hr />
-      &copy; <span id="year">year</span> | Sara M. Tague | Texas
-      <div id="logo">
-        <picture><img src="#" alt="Dallas Temple Inn Logo" /></picture>
-      </div>
-
-      <div class="social-media">
-        <a href="https://www.facebook.com/ChurchofJesusChrist/"
-          ><picture><img class="icons" src="#" alt="Facebook Logo" /></picture
-        ></a>
-
-        <a href="https://www.instagram.com/churchofjesuschrist/"
-          ><picture><img class="icons" src="#" alt="Instagram logo" /></picture
-        ></a>
-      </div>
-
-      <p id="lastmod"></p>
+      <p class="footer-info">
+        &copy; <span id="year">year</span> | Sara M. Tague | Texas |
+      </p>
+      <p class="footer-info-two" id="lastmod"></p>
     </footer>
   </body>
 </html>
