@@ -10,7 +10,8 @@
         "history": "Announced: 28 July 1847",
         "history2": "Groundbreaking: 14 February 1853",
         "history3": "Dedicated: 6 April 1893",
-        "schedule": "This Temple is currently closed for renovations. The schedual will be updated when as renovations progress."
+        "schedule": "This Temple is currently closed for renovations. The schedual will be updated when as renovations progress.",
+        "website": "https://www.churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng"
       },
       {
         "name": "Boston Massachusetts Temple",
@@ -22,7 +23,8 @@
         "history": "Announced: 28 July 1847",
         "history2": "Groundbreaking: 14 February 1853",
         "history3": "Dedicated: 6 April 1893",
-        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances."
+        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances.",
+        "website": "https://www.churchofjesuschrist.org/temples/details/boston-massachusetts-temple?lang=eng"
       },
       {
         "name": "Dallas Temple",
@@ -34,7 +36,8 @@
         "history": "Announced: 1 April 1981",
         "history2": "Groundbreaking: 22 January 1983",
         "history3": "Dedicated: 19 October 1984",
-        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances."
+        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances.",
+        "website": "https://www.churchofjesuschrist.org/temples/details/dallas-texas-temple?lang=eng"
       },
       {
         "name": "Paris France Temple",
@@ -46,7 +49,8 @@
         "history": "Announced: 1 October 2011",
         "history2": "Groundbreaking: 24 August 2012",
         "history3": "Dedicated: 21 May 2017",
-        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances."
+        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances.",
+        "website": "https://www.churchofjesuschrist.org/temples/details/paris-france-temple?lang=eng"
       },
       {
         "name": "Roam Italy Temple",
@@ -58,7 +62,8 @@
         "history": "Announced: 4 October 2008",
         "history2": "Groundbreaking: 23 October 2010",
         "history3": "Dedicated: 10 March 2019",
-        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances."
+        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances.",
+        "website": "https://www.churchofjesuschrist.org/temples/details/rome-italy-temple?lang=eng"
       },
       {
         "name": "Anchorage Alaska Temple",
@@ -70,7 +75,8 @@
         "history": "Announced: 4 October 1997",
         "history2": "Groundbreaking: 17 April 1998",
         "history3": "Dedicated: 9 January 1999",
-        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances."
+        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances.",
+        "website": "https://www.churchofjesuschrist.org/temples/details/anchorage-alaska-temple?lang=eng"
       }
     ]
 }

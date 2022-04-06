@@ -36,7 +36,7 @@ grid-column: 1/5;
   }
   h1 {
     font-size: 1em;
-    padding-left: 2em;
+    padding-left: 1.5em;
   }
   .services-main {
     display: grid;
@@ -56,5 +56,13 @@ grid-column: 1/5;
   }
   .card-view {
     grid-template-columns: repeat(3, 1fr);
+  }
+  form textarea {
+    width: 102%;
+  }
+  .join-form {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin-left: 1em;
   }
 }

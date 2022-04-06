@@ -1,4 +1,4 @@
-  /*apiURL = 'https://api.openweathermap.org/data/2.5/weather?zip=75002&units=imperial&appid=ee11ad1912b19a7ddea28dc7f20d38f0';
+apiURL = 'https://api.openweathermap.org/data/2.5/weather?zip=75202&units=imperial&appid=ee11ad1912b19a7ddea28dc7f20d38f0';
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -37,9 +37,9 @@ fetch(apiURL)
         
     }
 
-*/
+
     
-fetchForecast = function () {
+/* fetchForecast = function () {
 	var endpoint =
   "https://api.openweathermap.org/data/2.5/onecall?lat=32.77815&lon=-96.7954&appid=03689c1378089806d5776a8535e24bc3&units=imperial&lang=en";
 	var forecastEl = document.getElementsByClassName("forecast");
@@ -77,4 +77,4 @@ fetchForecast = function () {
 	.catch(function (err) {
 		console.log("Fetch Error :-S", err);
 	});
-};
+}; */

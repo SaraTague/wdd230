@@ -44,4 +44,21 @@
   .missionary-image {
     grid-column: 1 / 2;
   }
+
+  .spotlights {
+    grid-column: 1 / 5;
+    display: flex;
+  }
+  .spotlights img {
+    width: 40em;
+  }
+
+  .join-form {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+
+  form textarea {
+    width: 103%;
+  }
 }
