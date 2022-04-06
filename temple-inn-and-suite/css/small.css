@@ -4,22 +4,21 @@ h1,
 h2,
 h3,
 h4,
-header {
+header,
+p,
+footer,
+article,
+a {
   font-family: "Montserrat", sans-serif;
 }
 
-p,
-footer,
-article {
-  font-family: "Lato", sans-serif;
-}
-
 main {
-  display: grid;
   grid-auto-rows: minmax(min-content, max-content);
-  margin-bottom: 0.5rem;
-  row-gap: 0.5rem;
-  padding: 0.5rem;
+  row-gap: 0.75rem;
+  column-gap: 0.75em;
+  padding: 0.75rem;
+  max-width: 95em;
+  margin: auto;
 }
 
 article {
@@ -28,14 +27,15 @@ article {
   padding: 0em;
   text-align: center;
   box-shadow: 2px 2px 5px rgb(95, 95, 95);
-  overflow: hidden;
 }
 
 h1 {
   font-size: 1.25em;
-  text-shadow: 1.5px 2px 0px  #8bd02367;
+  text-shadow: 1.5px 2px 0px #8bd02367;
 }
-
+h2 {
+  color: #2f5597;
+}
 
 /* Header */
 
@@ -64,7 +64,7 @@ header {
   margin-right: 3em;
 }
 nav {
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 .navigation li:first-child {
   display: block;
@@ -109,12 +109,10 @@ footer {
   width: 100%;
   margin-top: 1em;
 }
-
-.map {
+.map, .openweather {
   list-style: none;
   color: white;
 }
-
 .contact a {
   text-decoration: none;
 }
@@ -125,7 +123,6 @@ footer {
 .social-media {
   margin-bottom: 10px;
 }
-
 .icons {
   padding-right: 0.5em;
   padding-left: 0.5em;
@@ -134,7 +131,7 @@ footer {
 
 /* Home */
 
-.home-headder{
+.home-headder {
   display: none;
 }
 
@@ -146,13 +143,14 @@ footer {
   box-shadow: 2px 2px 5px rgb(95, 95, 95);
 }
 .calltoactionimage {
-  border-radius: 8px 8px 0 0 ;
+  border-radius: 8px 8px 0 0;
   width: 100%;
   padding: 0;
 }
 .callToAction {
   display: grid;
   grid: 1fr 1fr / 1fr 1fr;
+  margin-bottom: 0.75em;
 }
 .callToAction picture {
   grid-column: 1/3;
@@ -172,7 +170,7 @@ footer {
 }
 .callToAction a:hover {
   cursor: pointer;
-  font-weight:bolder;
+  font-weight: bolder;
   color: white;
 }
 .visittoday {
@@ -182,146 +180,21 @@ footer {
 
 /* Reservation */
 
-body {
-  height: 100vh;
-  font-size: 16px;
-  font-family: Montserrat, helvetica, sans-serif;
-}
 em {
   font-size: smaller;
 }
 .grid {
   display: grid;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-input,
-button,
-select,
-textarea {
-  padding: 0.5rem;
-  margin-bottom: .25rem;
-}
-
-label {
-  font-size: .7rem;
-  font-weight: 700;
-  width: 200px;
-}
-
-input:focus {
-  box-shadow: 0 0 10px #bbb;
-}
-fieldset {
-  background-color: #eee;
-  border: 1px solid #ccc;
-}
-
-legend {
-  font-family: Arial, sans-serif;
-  font-size: .6rem;
-}
-.nestedfieldset {
-  background-color: #fff;
-  margin-bottom: 2rem;
-}
-
-label {
-  display: block;
-}
-
-input[type="button"] {
-  color: blue;
-}
-input[type="button"]:hover {
-  background-color: #ddf;
-}
-
-input:invalid {
-  background-color: #fdd;
-  color: #000;
-}
-input:valid {
-  background-color: #dfd;
-  color: #000;
-}
-
-.flexly {
-  display: flex;
-  align-items: center;
-}
-
-input[type="radio"], input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  margin-right: 1rem;
-}
-
-.selection {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-
-#ratingvalue {
-  margin: 0 15px;
-  color: #2075ff;
-}
-
-#selected {
-  position: absolute;
-  top: 550px;
-  left: 300px;
-  border: 1px solid #999;
-  background-color: #abe;
-  padding: 10px;
-  font-weight: 700;
-  display: none;
-}
-
-.bottom {
-  display: flex;
-  align-content: bottom;
-}
-
-.sbutton {
-  margin: .1rem;
-  background-color: #abe;
-  font-weight: 700;
-  border: 1px solid #777;
-  box-shadow: 0 0 7px #777;
-}
-
 /* Temples */
-
-.cards {
-  width: auto;
-}
-
-.directory {
-  text-align: center;
-}
-
-.list-view img,
-.card-view > section h3 {
-  display: none;
-}
 
 .card-view img {
   display: block;
   width: 60%;
   margin: auto;
-}
-
-.list-view > section h3 {
-  display: block;
-}
-
-.list-view section {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 0.5em;
 }
 
 .card-view {
@@ -330,50 +203,31 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .card-view section {
-  padding: 0.5em;
+  padding: 1em;
   margin: 0.5em;
   border-radius: 8px;
-  background-color: rgba(0, 73, 146, 0.075);
+  background-color: #F2F2F2;
 }
 
-.list-view-btn {
-  padding: 0.5em;
-}
 
-.list-view-btn button {
-  padding: 0.2rem;
-  background-color: white;
-  border-radius: 8px;
-  margin: 1em;
-  border: none;
-}
-
-.list-view section:nth-child(2n) {
-  background-color: rgba(0, 73, 146, 0.199);
-}
-
-.list-view section {
-  background-color: rgba(0, 73, 146, 0.075);
-}
-
-/* like button */
+/* like button 
 :root {
   --red: rgb(209, 3, 3);
   --white: #fff;
   --black: #000;
 }
 .btn {
-  width: 200px; height: 88px;
+  width: 200px;
+  height: 88px;
   outline: 0;
   border: 2px solid #ccc;
   color: #000;
   cursor: pointer;
-  overflow: hidden;
   position: relative;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.05);
-  transition: 1.5s cubic-bezier(.21,.04,.26,.99);
+  transition: 1.5s cubic-bezier(0.21, 0.04, 0.26, 0.99);
 }
 .btn:hover {
   box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
@@ -384,12 +238,12 @@ input[type="radio"], input[type="checkbox"] {
   font-size: 2rem;
   border-radius: 10px;
   background: #fff;
-  transition: 1.5s cubic-bezier(.21,.04,.26,.99);
+  transition: 1.5s cubic-bezier(0.21, 0.04, 0.26, 0.99);
 }
 .btn-like.liked {
   background: var(--red);
   border-color: var(--red);
-}
+}*/
 /*-- Button Icon -- */
 .btn-icon {
   display: inline-block;
@@ -397,8 +251,8 @@ input[type="radio"], input[type="checkbox"] {
   height: 36px;
   position: absolute;
   left: 1.5rem;
-  transition: 1s cubic-bezier(.21,.04,.26,.99);
-  transform: rotate(0deg)
+  transition: 1s cubic-bezier(0.21, 0.04, 0.26, 0.99);
+  transform: rotate(0deg);
 }
 .btn:hover .btn-icon {
   color: var(--red);
@@ -407,10 +261,10 @@ input[type="radio"], input[type="checkbox"] {
   color: var(--black);
 }
 .liked .btn--icon-default {
-  transform: rotate(-90deg)
+  transform: rotate(-90deg);
 }
 .btn:not(.liked).btn--icon-liked {
-  transform: rotate(-90deg)
+  transform: rotate(-90deg);
 }
 .liked .btn--icon-default,
 .btn--icon-liked {
@@ -437,11 +291,108 @@ input[type="radio"], input[type="checkbox"] {
   color: var(--black);
 }
 .btn:not(.liked) .btn-content--liked {
-  transform: translate(110px)
+  transform: translate(110px);
 }
 .btn:not(.liked) .btn-content--default {
-  transform: translate(-56px)
+  transform: translate(-56px);
 }
 .liked .btn-content--default {
-  transform: translate(24px)
+  transform: translate(24px);
+}
+
+/* Service */
+
+.service-image {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  padding: 0;
+}
+.services-article {
+  width: auto;
+}
+article p {
+  padding: 15px;
+}
+.services-header {
+  text-align: center;
+}
+.sub-pages {
+  padding: 1em;
+  margin-bottom: 0.75em;
+}
+.amenities-list {
+  text-align: left;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+.missionary,
+.reception,
+.back {
+  border-radius: 8px;
+  padding: 1em;
+}
+.missionary a {
+  color: #8ad023;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25em;
+  transition: 0.5s;
+  border-radius: 8px;
+  padding: 0.75em;
+}
+
+.reception a {
+  color: #8ad023;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25em;
+  transition: 0.5s;
+  border-radius: 8px;
+  padding: 0.75em;
+}
+.reception a:hover {
+  color: white;
+  background-color: #8ad023;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.missionary a:hover {
+  color: white;
+  background-color: #8ad023;
+  border-radius: 8px;
+  cursor: pointer;
+}
+h3 {
+  padding-top: 15px;
+}
+
+/* sub pages */
+
+.back a {
+  color: #8ad023;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25em;
+  transition: 0.5s;
+  border-radius: 8px;
+  padding: 0.75em;
+  margin: 1em;
+}
+.back a:hover {
+  color: white;
+  background-color: #8ad023;
+  border-radius: 8px;
+  padding-left: 1.75em;
+  padding-right: 1.75em;
+}
+.back {
+  width: 10em;
+  align-self: center;
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+
+.sub-title {
+  padding-top: 15px;
 }

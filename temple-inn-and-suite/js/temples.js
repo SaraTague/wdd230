@@ -47,6 +47,21 @@ function displayBusinesses(business) {
   p4.textContent = business.history;
   card.appendChild(p4);
 
+  //p history
+  let p5 = document.createElement("p");
+  p5.textContent = business.history2;
+  card.appendChild(p5);
+
+  //p history
+  let p6 = document.createElement("p");
+  p6.textContent = business.history3;
+  card.appendChild(p6);
+
+  //p schedual
+  let p7 = document.createElement("p");
+  p7.textContent = business.schedule;
+  card.appendChild(p7);
+
   cards.appendChild(card);
 }
 

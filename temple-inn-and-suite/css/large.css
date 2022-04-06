@@ -8,6 +8,10 @@
     margin-top: 5%;
     padding-top: 1.7em;
   }
+  .callToAction {
+grid-column: 1/5;
+  }
+
   header {
     grid-template-columns: repeat(2, 1fr);
     display: grid;
@@ -33,5 +37,24 @@
   h1 {
     font-size: 1em;
     padding-left: 2em;
+  }
+  .services-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .home-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  h2 {
+    grid-column: 1/4;
+  }
+
+  .missionary, .reception, a {
+    margin-left: .75em;
+    margin-right: .75em;
+  }
+  .card-view {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

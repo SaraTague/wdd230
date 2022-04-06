@@ -44,118 +44,141 @@
     </header>
     <main class="reservation-main">
       <h2>Make a Reservation</h2>
-      <p>6363 Willow Ln, Dallas, TX 75230</p>
 
-      <form method="post" action="#" class="grid">
+
+      <article class="services-article">
+        <p>Basic Information</p>
+        <p>Address: 6363 Willow Ln, Dallas, TX 75230</p>
+        <p>Number: (1) 972-991-1273</p>
+        <p>Email: dallastemple@ldstemples.org</p>
+      </article>
+
+
+      
+
+    
+
+      <form class="join-form" method="get" action="thankyou.html">
         <fieldset>
-          <label>Enter one letter:
-            <input type="text" size="1" name="input1" required pattern="[A-Za-z]">
+          <legend>Primary Contact</legend>
+          <label class="top"
+            >First Name*<input type="text" name="fname" required
+          /></label>
+          <label class="top"
+            >Last Name*<input type="text" name="lname" required
+          /></label>
+          <label class="top"
+            >Email*<input
+              type="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required
+          /></label>
+          <label class="top"
+            >Phone*<input type="tel" name="phone" required
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Reservation Details</legend>
+          <label>Date of Arival:
+            <input type="date" name="theDate" required></label><br>
+            <label>Date of Departure:
+              <input type="date" name="theDate" required></label><br>
+
+                  <label>Room Type:</label>
+                  <div class="selection">
+                    <input type="radio" name="room" id="room" value="8" checked>
+                    <label for="time1">Singe/twin bed</label>
+                    <input type="radio" name="room" id="room" value="9">
+                    <label for="time2">Double/2 twin beds</label>
+                    <input type="radio" id="room" name="room" value="10">
+                    <label for="time3">Medium/queen bed</label>
+                    <input type="radio" id="room" name="room" value="11">
+                    <label for="time4">Family/queen and 2 twin</label>
+                    <input type="radio" id="room" name="room" value="12">
+                    <label for="time5">Long term/queen and kitchen</label>
+                  </div>
+
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Aditional Needs or Requests:</legend>
+          <label class="top"
+            > <br /><textarea
+              rows="3"
+              name="bus-description"
+            ></textarea>
           </label>
         </fieldset>
-      
+
+
+
         <fieldset>
-          <!-- this demonstrates the two ways to use labels (for) and (surround) - demonstrate what happens -->
-          <fieldset class="nestedfieldset">
-            <legend>Radio Buttons <em>(Choose one)</em></legend>
-            <div class="selection">
-              <input type="radio" name="time" id="time1" value="8" checked>
-              <label for="time1">8:00 a.m.</label>
-              <input type="radio" name="time" id="time2" value="9">
-              <label for="time2">9:00 a.m.</label>
-              <input type="radio" id="time3" name="time" value="10">
-              <label for="time3">10:00 a.m.</label>
-              <input type="radio" id="time4" name="time" value="11">
-              <label for="time4">11:00 a.m.</label>
-            </div>
-          </fieldset>
-          <fieldset class="nestedfieldset">
-            <legend>Checkbox <em>(Select all that apply)</em></legend>
-            <div class="selection">
-              <input type="checkbox" id="coding" name="interest" value="coding" checked>
-              <label for="coding"> Coding</label>
-              <input type="checkbox" id="music" name="interest" value="music">
-              <label for="music">Music</label>
-              <input type="checkbox" id="football" name="interest" value="football">
-              <label for="football">Football</label>
-              <input type="checkbox" id="gardening" name="interest" value="gardening">
-              <label for="gardening">Gardening</label>
-            </div>
-          </fieldset>
+          <legend>Type of Stay:</legend>
+          <label class="sbs"
+            ><input type="radio" name="member" value="np" /><span class="level">
+              Non-profit </span
+            ><span class="price"> Free </span></label
+          >
+          <p class="description">
+            Have your business listed in the Allen Texas Chamber of Commerce
+            online directory.
+          </p>
+          <label class="sbs"
+            ><input type="radio" name="member" value="bronze" /><span
+              class="level"
+            >
+              Bronze </span
+            ><span class="price"> $1,000 </span></label
+          >
+          <p class="description">
+            An affordable price for great business opprotunities. If you want to
+            be a more active member in the community and be invited to
+            participate in local events then the bronze membership might be for
+            you.
+          </p>
+          <label class="sbs"
+            ><input type="radio" name="member" value="silver" /><span
+              class="level"
+            >
+              Silver </span
+            ><span class="price"> $3,000 </span></label
+          >
+          <p class="description">
+            See growth for your buissness by being included in our chamber
+            spotlights and directory. Stay up-to-date in the Chamber's events,
+            receive spotlights, and be included in the chamber's online
+            directory.
+          </p>
+          <label class="sbs"
+            ><input type="radio" name="member" value="gold" /><span
+              class="level"
+            >
+              Gold </span
+            ><span class="price"> $6,000 </span></label
+          >
+          <p class="description">
+            The gold membership gives you and your company complete access to
+            the Greater Area Commmerse resources. Your company will be the
+            featured business on the Greater Area Commerse homepage. Your
+            company will recieve invitations to every exculsive and public event
+            held by the commerse.
+          </p>
         </fieldset>
-      
-        <fieldset>
-          <label for="zip">Zip Code:
-            <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"></label>
-          <!-- use the label example here -->
-          <label>Phone:
-            <input type="tel" name="phone" placeholder="###-###-####">
-          </label>
-          <label>eMail:
-            <input type="email" name="email" placeholder="user@email.org"></label>
-          <label for="u">URL:
-            <input type="url" name="u" id="u" value="http://www.ibm.com"></label>
-        </fieldset>
-      
-        <fieldset>
-          <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
-            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-            <span id="ratingvalue">5</span>
-          </label>
-      
-          <datalist id="tickmarks">
-            <option value="0">
-            <option value="1">
-            <option value="2">
-            <option value="3">
-            <option value="4">
-            <option value="5">
-            <option value="6">
-            <option value="7">
-            <option value="8">
-            <option value="9">
-            <option value="10">
-          </datalist>
-      
-          <label>Browser:
-            <input name="browsers" list="browserlist"></label>
-          <datalist id="browserlist">
-            <option value="Google Chrome">
-            <option value="Mozilla Firefox">
-            <option value="Microsoft Edge">
-          </datalist>
-          <br><br>
-          <label>
-            <select name="browsers" id="selectbrowser" onchange="selectResponse()">
-              <option value="" disabled selected>Select a Browser ...</option>
-              <option value="Chrome">Google Chrome</option>
-              <option value="Firefox">Mozila Firefox</option>
-              <option value="MS Edge">MS Edge</option>
-              <option value="Brave">Brave</option>
-            </select></label>
-        </fieldset>
-      
-        <fieldset>
-          <label for="search">Search: </label><input type="search" id="search"><br>
-          <label for="month">Month: </label> <input type="month" id="month"><br>
-          <label for="week">Week: </label> <input type="week" id="week">
-        </fieldset>
-      
-        <fieldset>
-          <label>Date Picker:
-            <input type="date" name="theDate"></label><br>
-          <label>Choose a color:
-            <input type="color" name="color"></label>
-          <hr>
-          <div class="buttons bottom">
-      
-            <input type="submit" class="sbutton"><br>
-            <input type="button" value="Button Value" class="sbutton"><br>
-            <button type="button" class="sbutton">Button Text</button>
-          </div>
-        </fieldset>
+        <label
+          ><input type="hidden" id="submitdate" name="submitdate" value=""
+        /></label>
+        <input type="submit" class="submit" value="Join the Chamber" />
       </form>
-      
-      <div id="selected"></div>
+
+
+
+
+
+
+
 
     </main>
 

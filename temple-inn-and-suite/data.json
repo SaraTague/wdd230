@@ -3,53 +3,74 @@
       {
         "name": "Salt Lake City Temple",
         "address": "50 W North Temple St Salt Lake City UT 84150-9709 United States",
-        "phone": "Milestones28 July 1847",
-        "email": "temple email",
-        "imgfile": "images/company1.gif",
+        "phone": "+1 801-240-3801",
+        "email": "saltlaketemple@ldstemples.org",
+        "imgfile": "images/slc.webp",
         "membership": "Gold",
-        "logourl": "images/company1.gif",
-        "history": "history",
-        "schedule": ""
+        "history": "Announced: 28 July 1847",
+        "history2": "Groundbreaking: 14 February 1853",
+        "history3": "Dedicated: 6 April 1893",
+        "schedule": "This Temple is currently closed for renovations. The schedual will be updated when as renovations progress."
       },
       {
-        "name": "ABC Heating & Air Conditioning, Inc.",
-        "address": "1209 N Ave #7, Plano, TX 75074",
-        "phone": "972-423-7380",
-        "website": "https://www.abcheatingandair.com",
-        "imgfile": "images/company2.gif",
-        "membership": "Gold"
+        "name": "Boston Massachusetts Temple",
+        "address": "50 W North Temple St Salt Lake City UT 84150-9709 United States",
+        "phone": "+1 801-240-3801",
+        "email": "saltlaketemple@ldstemples.org",
+        "imgfile": "images/boston.webp",
+        "membership": "Gold",
+        "history": "Announced: 28 July 1847",
+        "history2": "Groundbreaking: 14 February 1853",
+        "history3": "Dedicated: 6 April 1893",
+        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances."
       },
       {
-        "name": "AC Pros",
-        "address": "577 Sterling Drive, Richardson, TX 75081",
-        "phone": "972-591-0199",
-        "website": "https://www.acprostx.com",
-        "imgfile": "images/company3.gif",
-        "membership": "gold"
+        "name": "Dallas Temple",
+        "address": "6363 Willow Ln Dallas TX 75230-2227 United States",
+        "phone": "(1) 972-991-1273",
+        "email": "dallastemple@ldstemples.org",
+        "imgfile": "images/dallas.webp",
+        "membership": "Gold",
+        "history": "Announced: 1 April 1981",
+        "history2": "Groundbreaking: 22 January 1983",
+        "history3": "Dedicated: 19 October 1984",
+        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances."
       },
       {
-        "name": "Accasia's Event Venue",
-        "address": "902 Country Lane, Allen, TX 75002",
-        "phone": "972-359-9273",
-        "website": "https://www.accasiaevents.com",
-        "imgfile": "images/company4.gif",
-        "membership": "gold"
+        "name": "Paris France Temple",
+        "address": "46 Boulevard Saint Antoine 78150 Le Chesnay France",
+        "phone": "(33) 970-73-70-00",
+        "email": "paristemple@ldstemples.org",
+        "imgfile": "images/paris.webp",
+        "membership": "Gold",
+        "history": "Announced: 1 October 2011",
+        "history2": "Groundbreaking: 24 August 2012",
+        "history3": "Dedicated: 21 May 2017",
+        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances."
       },
       {
-        "name": "Advanced Landscape Management, LLC",
-        "address": "902 Country Lane, Allen, TX 75002",
-        "phone": "972-359-9273",
-        "website": "https://www.advancedlandscape.net",
-        "imgfile": "images/company5.gif",
-        "membership": "gold"
+        "name": "Roam Italy Temple",
+        "address": "Via di Settebagni 376 Rome RM Italy",
+        "phone": "(39) 06-9480-5050",
+        "email": "roamtemple@ldstemples.org",
+        "imgfile": "images/roam.webp",
+        "membership": "Gold",
+        "history": "Announced: 4 October 2008",
+        "history2": "Groundbreaking: 23 October 2010",
+        "history3": "Dedicated: 10 March 2019",
+        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances."
       },
       {
-        "name": "Advanced Landscape Management, LLC",
-        "address": "902 Country Lane, Allen, TX 75002",
-        "phone": "972-359-9273",
-        "website": "https://www.advancedlandscape.net",
-        "imgfile": "images/company5.gif",
-        "membership": "gold"
+        "name": "Anchorage Alaska Temple",
+        "address": "13161 Brayton Dr Anchorage AK 99516 United States",
+        "phone": "(1) 907-348-7890",
+        "email": "alaskatemple@ldstemples.org",
+        "imgfile": "images/alaska.webp",
+        "membership": "Gold",
+        "history": "Announced: 4 October 1997",
+        "history2": "Groundbreaking: 17 April 1998",
+        "history3": "Dedicated: 9 January 1999",
+        "schedule": "This Temple is in Phase 3: All living ordinances and limited proxy ordinances."
       }
     ]
 }
