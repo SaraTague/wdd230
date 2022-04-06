@@ -65,10 +65,3 @@ function displayBusinesses(business) {
   cards.appendChild(card);
 }
 
-listButton.addEventListener("click", () => {
-  cards.classList.replace("card-view", "list-view");
-});
-
-cardButton.addEventListener("click", () => {
-  cards.classList.replace("list-view", "card-view");
-});

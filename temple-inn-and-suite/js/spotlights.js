@@ -12,7 +12,7 @@ fetch(requestURL)
     spotlight = spotlight.sort(() => Math.random() - 0.5);
     displaybusinesses(spotlight[0]);
     displaybusinesses(spotlight[1]);
-
+    displaybusinesses(spotlight[2]);
   });
 
 function displaybusinesses(businesses) {

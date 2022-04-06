@@ -34,7 +34,7 @@ h1 {
   text-shadow: 1.5px 2px 0px #8bd02367;
 }
 h2 {
-  color: #2f5597;
+  color: #1F567C;
 }
 
 /* Header */
@@ -102,7 +102,7 @@ strong:hover {
 
 footer {
   grid-template-columns: repeat(2, 1fr);
-  background-color: #2f5597;
+  background-color: #1F567C;
   color: white;
   text-align: center;
   padding-bottom: 0.5rem;
@@ -135,13 +135,33 @@ footer {
   display: none;
 }
 
+
+
+
 .spotlights {
-  display: block;
-  border-radius: 10px;
-  padding: 0.75em;
+  box-shadow: 1px 1px 5px rgb(95, 95, 95);
+
   text-align: center;
-  box-shadow: 2px 2px 5px rgb(95, 95, 95);
+  border-radius: 8px;
+  padding: 10px;
 }
+
+.spotlight:last-child {
+  display: none;
+}
+
+.spotlight img {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.spotlight {
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  font-size: larger;
+}
+
 .calltoactionimage {
   border-radius: 8px 8px 0 0;
   width: 100%;
@@ -177,6 +197,9 @@ footer {
   font-size: 1em;
   grid-column: 1/3;
 }
+.family, .wedding {
+display: none;
+}
 
 /* Weather */
 
@@ -185,6 +208,7 @@ footer {
 
 .reservation-main {
   font-family: "Montserrat", sans-serif;
+  display: grid;
 }
 
 em {
@@ -200,7 +224,7 @@ form fieldset {
 }
 
 form legend {
-  color: #2f5597;
+  color: #1F567C;
   font-weight: bolder;
   padding: 0.7rem;
   background-color: white;
@@ -228,13 +252,14 @@ form label.top select {
 form label.sbs {
   display: block;
   padding: 0.75rem 0;
-  color: #2f5597;
+  color: #1F567C;
 }
 
 form textarea {
-  width: 108%;
+  width: 100%;
   background-color: #F2F2F2;
   border-radius: 8px;
+  padding: 8px;
 }
 
 form input.submit {
@@ -266,13 +291,12 @@ form label.top input:required {
 }
 
 .price {
-  background-color: #2f5597;
+  background-color: #1F567C;
   color: white;
   padding: 0.25rem 1rem;
   margin-left: 0.5rem;
   border-radius: 10px;
 }
-
 .selection {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -284,7 +308,9 @@ form label.top input:required {
   justify-self: center;
   padding: 2em;
 }
-
+.reservation-heading {
+  text-align: center;
+}
 /* Temples */
 
 .card-view img {
@@ -341,60 +367,7 @@ text-align: center;
   border-color: var(--red);
 }*/
 /*-- Button Icon -- */
-.btn-icon {
-  display: inline-block;
-  width: 32px;
-  height: 36px;
-  position: absolute;
-  left: 1.5rem;
-  transition: 1s cubic-bezier(0.21, 0.04, 0.26, 0.99);
-  transform: rotate(0deg);
-}
-.btn:hover .btn-icon {
-  color: var(--red);
-}
-.btn.liked:hover .btn-icon {
-  color: var(--black);
-}
-.liked .btn--icon-default {
-  transform: rotate(-90deg);
-}
-.btn:not(.liked).btn--icon-liked {
-  transform: rotate(-90deg);
-}
-.liked .btn--icon-default,
-.btn--icon-liked {
-  opacity: 0;
-  color: #fff;
-  position: absolute;
-}
-.btn--icon-default,
-.liked .btn--icon-liked {
-  opacity: 1;
-  left: 1.5rem;
-}
-/*-- Button Content -- */
-.btn-content {
-  transition: transform 0.1s ease;
-  display: inline-block;
-  /* position: absolute;
-  right: 0; */
-}
-.liked .btn-content {
-  color: var(--white);
-}
-.btn:hover.liked .btn-content {
-  color: var(--black);
-}
-.btn:not(.liked) .btn-content--liked {
-  transform: translate(110px);
-}
-.btn:not(.liked) .btn-content--default {
-  transform: translate(-56px);
-}
-.liked .btn-content--default {
-  transform: translate(24px);
-}
+
 
 /* Service */
 

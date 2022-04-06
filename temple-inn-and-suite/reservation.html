@@ -43,10 +43,10 @@
       </nav>
     </header>
     <main class="reservation-main">
-      <h2>Make a Reservation</h2>
+      <h2 class="reservation-heading">Make a Reservation</h2>
 
-      <article class="services-article">
-        <p>Basic Information</p>
+      <article class="contact-info">
+        <p><strong>Information</strong></p>
         <p>Address: 6363 Willow Ln, Dallas, TX 75230</p>
         <p>Number: (1) 972-991-1273</p>
         <p>Email: dallastemple@ldstemples.org</p>
@@ -79,10 +79,11 @@
             >Date of Arival:
             <input type="date" name="theDate" required /></label
           ><br />
+          <br />
           <label
             >Date of Departure:
             <input type="date" name="theDate" required /></label
-          ><br />
+          ><br /><br />
 
           <label>Room Type:</label>
           <div class="selection">
@@ -101,9 +102,8 @@
 
         <fieldset>
           <legend>Aditional Needs or Requests:</legend>
-          <label class="top">
-            <textarea rows="3" name="bus-description"></textarea>
-          </label>
+
+          <textarea rows="3" name="bus-description"></textarea>
         </fieldset>
         <label
           ><input type="hidden" id="submitdate" name="submitdate" value=""

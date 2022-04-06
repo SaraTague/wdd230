@@ -38,43 +38,23 @@ fetch(apiURL)
     }
 
 
-    
-/* fetchForecast = function () {
-	var endpoint =
-  "https://api.openweathermap.org/data/2.5/onecall?lat=32.77815&lon=-96.7954&appid=03689c1378089806d5776a8535e24bc3&units=imperial&lang=en";
-	var forecastEl = document.getElementsByClassName("forecast");
-
-	fetch(endpoint)
-	.then(function (response) {
-		if (200 !== response.status) {
-			console.log(
-				"Looks like there was a problem. Status Code: " + response.status
-			);
-			return;
-		}
-
-		forecastEl[0].classList.add('loaded');
-
-		response.json().then(function (data) {
-			var fday = "";
-			data.daily.forEach((value, index) => {
-				if (index > 0) {
-					var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
-						weekday: "long",
-					});
-					var icon = value.weather[0].icon;
-					var temp = value.temp.day.toFixed(0);
-					fday = `<div class="forecast-day">
-						<p>${dayname}</p>
-						<p><span class="ico-${icon}" title="${icon}"></span></p>
-						<div class="forecast-day--temp">${temp}<sup>°C</sup></div>
-					</div>`;
-					forecastEl[0].insertAdjacentHTML('beforeend', fday);
-				}
-			});
-		});
-	})
-	.catch(function (err) {
-		console.log("Fetch Error :-S", err);
-	});
-}; */
+/*
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+       selector:".weatherWidget",
+       apiKey:"QEE42Q6JYWRALRTSSC3NJS8M9",
+       location:"Dallas, US", 
+       unitGroup:"us", 
+       forecastDays:5, 
+       title:"Dallas,US", 
+       showTitle:true, 
+       showConditions:true
+   });
+  
+   (function() {
+   var d = document, s = d.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+*/

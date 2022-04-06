@@ -39,18 +39,26 @@
     margin-right: 2em;
     margin-bottom: 2em;
   }
-
+  .callToAction {
+    grid-column: 1/4;
+      }
   .reception-image,
   .missionary-image {
     grid-column: 1 / 2;
   }
 
   .spotlights {
-    grid-column: 1 / 5;
+    grid-column: 1/4;
     display: flex;
+    justify-content: space-around;
   }
-  .spotlights img {
-    width: 40em;
+
+  .spotlight {
+    margin: 10px;
+  }
+
+  .spotlight img {
+    width: 11em;
   }
 
   .join-form {
@@ -60,5 +68,34 @@
 
   form textarea {
     width: 103%;
+  }
+  .reservation-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reservation-heading {
+    grid-row: 1/2;
+    grid-row: 1/2;
+  }
+  .contact-info {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    height: fit-content;
+    margin: 2em;
+  }
+  .join-form {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+  .extra-info {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  .family {
+    display: block;
+  }
+  .home-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 }
