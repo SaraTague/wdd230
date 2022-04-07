@@ -9,7 +9,7 @@
     padding-top: 1.7em;
   }
   .callToAction {
-grid-column: 1/5;
+    grid-column: 1/5;
   }
 
   header {
@@ -50,9 +50,11 @@ grid-column: 1/5;
     grid-column: 1/4;
   }
 
-  .missionary, .reception, a {
-    margin-left: .75em;
-    margin-right: .75em;
+  .missionary,
+  .reception,
+  a {
+    margin-left: 0.75em;
+    margin-right: 0.75em;
   }
   .card-view {
     grid-template-columns: repeat(3, 1fr);
@@ -68,11 +70,11 @@ grid-column: 1/5;
   .spotlight img {
     width: 22em;
   }
-  .wedding {
-    display: block;
-  }
   .contact-info {
     margin: 2em;
     margin-bottom: 0;
+  }
+  .family {
+    display: block;
   }
 }
