@@ -79,9 +79,10 @@
   }
   .contact-info {
     grid-column: 1/2;
-    grid-row: 2/4;
+    grid-row: 2/3;
     height: fit-content;
     margin: 2em;
+    margin-top: auto;
   }
   .join-form {
     grid-column: 2/3;
@@ -97,5 +98,13 @@
   .home-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
+  }
+  .sunset {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 2em;
+    align-self: top;
+    height: fit-content;
   }
 }

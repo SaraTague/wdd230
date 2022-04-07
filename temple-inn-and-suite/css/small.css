@@ -34,7 +34,7 @@ h1 {
   text-shadow: 1.5px 2px 0px #8bd02367;
 }
 h2 {
-  color: #1F567C;
+  color: #2F5597;
 }
 
 /* Header */
@@ -102,7 +102,7 @@ strong:hover {
 
 footer {
   grid-template-columns: repeat(2, 1fr);
-  background-color: #1F567C;
+  background-color: #2F5597;
   color: white;
   text-align: center;
   padding-bottom: 0.5rem;
@@ -134,13 +134,8 @@ footer {
 .home-headder {
   display: none;
 }
-
-
-
-
 .spotlights {
   box-shadow: 1px 1px 5px rgb(95, 95, 95);
-
   text-align: center;
   border-radius: 8px;
   padding: 10px;
@@ -224,7 +219,7 @@ form fieldset {
 }
 
 form legend {
-  color: #1F567C;
+  color: #2F5597;
   font-weight: bolder;
   padding: 0.7rem;
   background-color: white;
@@ -252,7 +247,7 @@ form label.top select {
 form label.sbs {
   display: block;
   padding: 0.75rem 0;
-  color: #1F567C;
+  color: #2F5597;
 }
 
 form textarea {
@@ -270,7 +265,6 @@ font-weight: bolder;
   border-radius: 8px;
   padding: 0.75rem 1.5rem;
   margin: 0 0 2rem 2%;
-  width: 50%;
   justify-self: center;
 }
 
@@ -291,7 +285,7 @@ form label.top input:required {
 }
 
 .price {
-  background-color: #1F567C;
+  background-color: #2F5597;
   color: white;
   padding: 0.25rem 1rem;
   margin-left: 0.5rem;
@@ -310,6 +304,16 @@ form label.top input:required {
 }
 .reservation-heading {
   text-align: center;
+}
+.sunset {
+  font-weight: bolder;
+  color: #8ad023;
+  display: none;
+}
+.contact-heading {
+  font-weight: bolder;
+  color: #8ad023;
+  font-size: 1.5em;
 }
 /* Temples */
 
@@ -432,9 +436,11 @@ article p {
   border-radius: 8px;
   cursor: pointer;
 }
-h3 {
-  padding-top: 15px;
+
+.amenities {
+  padding-top: .5em;
 }
+
 
 /* sub pages */
 

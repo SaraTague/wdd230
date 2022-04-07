@@ -71,4 +71,8 @@ grid-column: 1/5;
   .wedding {
     display: block;
   }
+  .contact-info {
+    margin: 2em;
+    margin-bottom: 0;
+  }
 }
