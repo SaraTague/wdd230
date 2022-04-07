@@ -315,6 +315,12 @@ form label.top input:required {
   color: #8ad023;
   font-size: 1.5em;
 }
+input[type=radio] {
+  border: 0px;
+  width: 50%;
+  height: 1em;
+}
+
 /* Temples */
 
 .card-view img {
@@ -335,43 +341,6 @@ form label.top input:required {
 .temple-heading {
 text-align: center;
 }
-
-/* like button 
-:root {
-  --red: rgb(209, 3, 3);
-  --white: #fff;
-  --black: #000;
-}
-.btn {
-  width: 200px;
-  height: 88px;
-  outline: 0;
-  border: 2px solid #ccc;
-  color: #000;
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.05);
-  transition: 1.5s cubic-bezier(0.21, 0.04, 0.26, 0.99);
-}
-.btn:hover {
-  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
-  border-color: var(--red);
-}
-.btn-like {
-  padding: 1.5rem 1.5rem 1.5rem 6rem;
-  font-size: 2rem;
-  border-radius: 10px;
-  background: #fff;
-  transition: 1.5s cubic-bezier(0.21, 0.04, 0.26, 0.99);
-}
-.btn-like.liked {
-  background: var(--red);
-  border-color: var(--red);
-}*/
-/*-- Button Icon -- */
-
 
 /* Service */
 
