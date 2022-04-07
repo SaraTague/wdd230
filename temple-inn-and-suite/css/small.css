@@ -317,8 +317,9 @@ form label.top input:required {
 }
 input[type=radio] {
   border: 0px;
-  width: 50%;
-  height: 1em;
+  width: 35%;
+  height: 1.25em;
+  margin: 5px;
 }
 
 /* Temples */
