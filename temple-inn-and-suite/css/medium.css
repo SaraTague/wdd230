@@ -1,7 +1,7 @@
 @media only screen and (min-width: 32.5em) {
-	main {
-		display: grid;
-	}
+  main {
+    display: grid;
+  }
   .navigation {
     display: flex;
   }
@@ -41,7 +41,7 @@
   }
   .callToAction {
     grid-column: 1/4;
-      }
+  }
   .reception-image,
   .missionary-image {
     grid-column: 1 / 2;
@@ -92,19 +92,16 @@
     grid-column: 1/2;
     grid-row: 2/4;
   }
-  .family {
-    display: block;
-  }
+
   .home-main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .sunset {
     display: block;
     grid-column: 1/2;
     grid-row: 3/4;
     margin: 2em;
-    align-self: top;
     height: fit-content;
   }
 }
