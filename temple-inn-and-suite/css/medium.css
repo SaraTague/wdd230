@@ -104,4 +104,7 @@
     margin: 2em;
     height: fit-content;
   }
+  footer {
+    font-size: 1em;
+  }
 }
